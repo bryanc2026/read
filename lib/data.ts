@@ -1,10 +1,39 @@
-export const nav = [
+export type NavLink = { label: string; href: string; external?: boolean };
+export type NavItem = NavLink & { children?: NavLink[] };
+
+export const nav: NavItem[] = [
   { label: "What You Get", href: "#what-you-get" },
   { label: "Results", href: "#results" },
   { label: "Coaches", href: "#coaches" },
   { label: "Reviews", href: "#reviews" },
   { label: "FAQ", href: "#faq" },
+  { label: "Boom Meta Method", href: "/boom-meta-method" },
 ];
+
+// Mirrors the live site's right-hand nav cluster (coaching.boomecommerce.com.au)
+export const utilityNav: { freeTools: NavItem; login: NavLink } = {
+  freeTools: {
+    label: "Free Tools",
+    href: "#",
+    children: [
+      {
+        label: "MER Efficiency Calculator",
+        href: "https://magnificent-sprite-a5c0cd.netlify.app/",
+        external: true,
+      },
+      {
+        label: "Aus Post Surcharge Calculator",
+        href: "https://sensational-swan-8529cb.netlify.app/",
+        external: true,
+      },
+    ],
+  },
+  login: {
+    label: "Log in",
+    href: "https://login.circle.so/sign_in?request_host=community.boomecommerce.com.au#email",
+    external: true,
+  },
+};
 
 export const differentiators = [
   {
@@ -373,4 +402,216 @@ export const footerLinks = {
     { label: "Reviews", href: "#reviews" },
     { label: "FAQ", href: "#faq" },
   ],
+};
+
+export const metaMethodPage = {
+  hero: {
+    eyebrow: "Finally Sort Meta Ads",
+    title: "The Boom Meta Method",
+    subhead: "A Meta Ads System That Grows With You, Not Against You",
+    cta: "Chat with us",
+    note: "Only 20 brands get access to this strategy",
+  },
+  problem: {
+    label: "The Problem",
+    title: "Ecommerce Business Struggling or Plateaued?",
+    intro: "Meta Ads have changed. Most brands haven't. Advantage+ and Shopping campaigns are no more.",
+    items: [
+      "Manually controlling audiences instead of feeding Meta clean signals",
+      "Testing random creatives with no structure or learning feedback loop",
+      "Focusing on ROAS instead of real blended performance metrics",
+      "Burning budget on ideas that “might work” instead of running a system",
+    ],
+    footer: "If this sounds like you, you're not alone. You just need a better system.",
+  },
+  answer: {
+    label: "The Answer",
+    title: "The Boom Meta Method teaches you how to:",
+    items: [
+      "Set up campaign structures that align to your business goals",
+      "Feed Meta the right data, not force it to guess",
+      "Create scroll-stopping ads for each funnel stage",
+      "Test ads with purpose, not chaos",
+      "Optimise based on cash in and out, not mythical ROAS",
+      "Roll out campaigns without rollercoaster results",
+    ],
+    footer: "This transformation isn't just possible — it's within your reach with the right guidance.",
+  },
+  coach: {
+    name: "Iain Calvert",
+    role: "Ecommerce Coach, Consultant and “Enthusiastic” Surfer",
+    photo: "/images/coach-iain.jpg",
+    bio: [
+      "I help Aussie ecommerce brands scale faster, spend smarter and sell more online.",
+      "With 20+ years in ecommerce, I've worked with global retailers like Billabong, Quiksilver, Supercheap Auto and Terry White Chemmart, as well as hundreds of growing brands across Australia and the UK.",
+      "I've run one of Australia's largest independent digital agencies, been CMO of a 500-person tech company, and now coach a group of brands doing $250K to $50M in revenue.",
+      "If you're a founder or in-house marketer and want to scale profitably without wasting time or ad spend, I can help.",
+    ],
+    quote: {
+      text: "He's not your ‘throw money at Instagram’ kinda guy. He's deliberate in thinking long-term to create real impact for business owners.",
+      author: "Rhys Furner",
+      company: "Shopify",
+    },
+    badges: [
+      "Worked for ASX-listed retailer",
+      "GM of one of the largest digital agencies in AU",
+      "Speaker at Klaviyo Events",
+      "Speaker at Shopify Events",
+      "Speaker at Retail Fest",
+      "Top 3 Episode on Add To Cart",
+    ],
+  },
+  intro: {
+    eyebrow: "Introducing",
+    title: "The Boom Meta Method",
+    body: "It's built for brands who are ready to go to the next stage. It's a systemised approach to Meta ads, designed to scale your brand profitably whether you're spending $2K a month or $400K.",
+    callout:
+      "Part of the Boom Ecommerce coaching program. This isn't another “tactic of the week.” It's the same repeatable method we use with some of the most successful ecommerce brands in Australia and New Zealand.",
+  },
+  strategy: {
+    title: "The Strategy",
+    steps: [
+      {
+        phase: "Month 1",
+        title: "Learn",
+        body: "Learn how to get the most from Meta and the Boom Meta Method in weekly live sessions and training videos.",
+      },
+      {
+        phase: "Month 2",
+        title: "Implement",
+        body: "You get a detailed checklist to set up your account while learning alongside other non-competing brands.",
+      },
+      {
+        phase: "Month 3 onwards",
+        title: "Optimise & Grow",
+        body: "Learn what works for your business and how to balance sales growth with profitability.",
+      },
+    ],
+    footnote: "All with live expert help.",
+    cta: "Contact us",
+  },
+  results: {
+    label: "Boom Member Results",
+    title: "Boom Members' Results",
+    subhead:
+      "The Boom Meta Method has been developed over years of working in ecommerce and adapted to the way Meta Ads currently works.",
+    items: [
+      {
+        title: "Consistent Sales Growth",
+        body: "This NZ brand started working with Boom and has seen consistent sales growth.",
+      },
+      {
+        title: "104% Year on Year Growth",
+        body: "Increasing sales year on year is the goal while managing costs. With Boom's help, this Aussie brand has seen significant growth without sacrificing profit.",
+      },
+      {
+        title: "Consistent Year on Year Growth",
+        body: "By understanding how Meta works and what strategies work for ecommerce brands, this business has seen year-over-year growth.",
+      },
+      {
+        title: "What Good Meta Results Look Like",
+        body: "Using the Boom Meta Method, this Aussie ecommerce brand is getting $8.37 back for every dollar spent on Meta.",
+      },
+    ],
+  },
+  partner: {
+    title: "We're a Meta Business Partner",
+    subhead: "We've used insights from working with Meta to develop the Boom Meta Method.",
+    logos: ["Meta Business Partners"],
+  },
+  coachingSteps: {
+    eyebrow: "Ecommerce Industry Expert",
+    title: "How the Coaching Program Works",
+    imageCaption:
+      "Iain is a regular speaker at ecommerce retail events around Australia, like Retail Fest on the Gold Coast.",
+    steps: [
+      { title: "Apply", body: "Contact us to ensure we're the right fit for each other." },
+      { title: "Strategy Call", body: "We'll discuss your goals and outline the Boom Meta Method." },
+      { title: "Onboarding", body: "Start learning Meta and the Boom Meta Method." },
+      {
+        title: "Learn with Other Brands",
+        body: "Join the group calls to discuss implementation and results with Iain and other brands.",
+      },
+      { title: "Book 1-2-1 Consulting", body: "Get access to Iain's calendar and book him any time." },
+      {
+        title: "Ask the Community",
+        body: "Someone else has solved your problem. Ask people months or years ahead of you.",
+      },
+    ],
+    cta: "Apply Now",
+  },
+  included: {
+    eyebrow: "What's Included",
+    title: "What's Included in Boom Ecommerce Coaching?",
+    subhead: "The Boom Meta Method is part of the Boom Ecommerce Coaching program. You also get access to…",
+    items: [
+      {
+        icon: "calendar" as const,
+        title: "1:1 Coaching Sessions",
+        body: "Book in a session any time you want to solve anything in ecommerce — from inventory management to hiring and everything in between.",
+      },
+      {
+        icon: "notes" as const,
+        title: "Strategic Planning Sessions",
+        body: "Comprehensive sessions to map out what your business needs to reach its full potential. As many or as few as you need.",
+      },
+      {
+        icon: "chat" as const,
+        title: "Weekly Live Consulting Sessions",
+        body: "Every week the community gets together on a video call to discuss what's new, what's working and what issues anyone has.",
+      },
+      {
+        icon: "community" as const,
+        title: "Private Community",
+        body: "Connect with like-minded professionals in our exclusive online community. No competitors, so you can share openly.",
+      },
+      {
+        icon: "google" as const,
+        title: "Google Ads Training",
+        body: "Ecommerce is so much more than just Meta ads. Learn how Google and Meta work together — a great Google Ads strategy will improve your Meta results.",
+      },
+      {
+        icon: "playbook" as const,
+        title: "Email Marketing Training",
+        body: "Step-by-step guide to setting up email flows and campaigns that complement your Meta ads.",
+      },
+    ],
+  },
+  different: {
+    title: "What's Different About Boom?",
+    body: "We only work with 20 brands that don't compete with each other. That means no one else in your industry gets access to the Boom Meta Method, and other ecommerce brands will share openly with you about what does and doesn't work.",
+    cta: "Find Out If Your Brand Can Join",
+  },
+  testimonials: {
+    title: "What Boom Members Say",
+    subhead: "Don't just take our word for it — here's what the community thinks of Boom.",
+    names: ["Prue Bauer", "Jordan Bruno", "Sam Schumann"],
+  },
+  noLockIn: {
+    title: "No Lock-In Contracts",
+    body: "We don't believe in trying to lock you in for 12 months. We want you to get results and to be happy. Because we only take on brands we know we can help, our success rate is really high. If you do want to leave, it's just 30 days notice.",
+  },
+  faqs: [
+    {
+      q: "How is this different from other coaching programs?",
+      a: "We only work with 20 brands that don't compete with each other. That means no one else in your industry gets access to the Boom Meta Method and other ecommerce brands will share openly with you about what does and doesn't work.",
+    },
+    {
+      q: "How much time will I need to commit each week?",
+      a: "It's only a few hours a week. However, if you need more help then you can book on-demand sessions.",
+    },
+    {
+      q: "Will this work for my specific situation?",
+      a: "The Boom Meta Method and coaching program is designed specifically for Aussie and Kiwi ecommerce brands selling to consumers who want to do the work in-house, not outsource it.",
+    },
+    {
+      q: "How soon will I see results?",
+      a: "Depending on how quickly you implement, but anywhere from 30–90 days.",
+    },
+    {
+      q: "Do you offer payment plans?",
+      a: "We offer monthly payment plans. The money you'll save on Meta advertising will outweigh the cost.",
+    },
+  ],
+  faqFooter: "Have more questions? I'm happy to answer them personally.",
 };

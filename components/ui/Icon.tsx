@@ -9,6 +9,7 @@ export type IconName =
   | "community"
   | "skills"
   | "check"
+  | "cross"
   | "arrow-right";
 
 const paths: Record<IconName, JSX.Element> = {
@@ -72,6 +73,9 @@ const paths: Record<IconName, JSX.Element> = {
   ),
   check: (
     <path d="m5 12.5 4.5 4.5L19 7.5" strokeLinecap="round" strokeLinejoin="round" />
+  ),
+  cross: (
+    <path d="M6.5 6.5l11 11M17.5 6.5l-11 11" strokeLinecap="round" strokeLinejoin="round" />
   ),
   "arrow-right": <path d="M4.5 12h15M13 5.5 19.5 12 13 18.5" strokeLinecap="round" strokeLinejoin="round" />,
 };

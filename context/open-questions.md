@@ -19,15 +19,32 @@ conversation over a big upfront questionnaire.
 - ✅ Bottleneck is lead volume, not conversion — Bryan closes most leads
   that reach him.
 
+**Answered — see `key-relationships.md`:**
+- ✅ "Bushy" = **Nathan Bush**, of the *Add to Cart* podcast — good
+  personal/business friend of both Bryan and Iain, also kickstarted
+  vavavoom digital's first clients. Referred both Alton Goods and Orange
+  Sherbet.
+- ✅ Studio Almond = a **design/dev house in New Zealand**. Referred Odd
+  Things and Heirest.
+
 **Still open:**
-- Who is **"Bushy"**? (referred both Alton Goods and Orange Sherbet — the
-  two best-fit merchants in the whole book. Understand the relationship
-  and whether more referrals can be asked for.)
-- Who/what is **"Studio Almond"**? (referred Odd Things and Heirest —
-  sounds like a partner agency. Same question: formalize/expand this?)
+- Studio Almond's actual website/URL, so Claude can review it for more
+  context (this session can't fetch external sites — network sandboxed;
+  either paste a screenshot/summary, or check it via local Claude Code).
+- Has Bryan ever made a **direct, explicit ask** to Nathan Bush for more
+  referrals ("who else do you know like Alton Goods/Orange Sherbet"), or
+  have both referrals so far been unprompted? This is probably the
+  highest-leverage open action in the whole business.
+- Is the Studio Almond relationship formal (referral fee, standing
+  arrangement) or informal/personal? Worth formalizing either way?
 - What does the current sales process look like end to end once a lead
   does arrive — first touch to signed merchant? Where (if anywhere) do
   good-fit leads still drop off?
+- Bryan says he's now "trying to screen out non-good merchants and focus
+  on acquiring good size merchants only" — what does that screening
+  actually look like in practice today? A discovery-call checklist,
+  gut feel, a minimum-revenue cutoff stated upfront, something else? Is
+  it consistent, or does it slip under sales pressure?
 - What's monthly churn / average merchant lifetime, especially for the
   sub-$1M "too emotional" segment vs. the $5M+ ICP? Is Boom still actively
   accepting sub-$1M merchants, or is that a mistake to stop making?

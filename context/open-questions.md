@@ -44,15 +44,19 @@ conversation over a big upfront questionnaire.
   possibly with cash or pro-bono work as a thank-you/re-investment.
 
 **Still open, roughly in priority order:**
-- Of the current **10 active merchants**, how many are actually $5M+/
-  Shopify Plus ICP vs. still-active smaller ones? This determines how
-  much of the "upgrade existing base to $5k/mo AI tier" opportunity is
-  real right now vs. aspirational.
-- What would it actually take, operationally, to deliver the AI-embedded
-  tier to an existing $1,950–$2k merchant — is the tooling already built
-  (used with Heirest?), or does it need to be built per-merchant from
-  scratch? What's a realistic timeline to pilot this with 1–2 existing
-  merchants?
+- ✅ Tier breakdown confirmed — see `boom-coaching.md`: Tier 1 (Plus,
+  high-confidence) = Alton Goods, Orange Sherbet, Roogenic, Elle & Riley,
+  ~$2-3k/mo add-on each. Tier 2 (smaller, lower confidence) = Hairgang,
+  Millwood Shoes, Precision Tools, Odd Things, Heirest.
+- ✅ Pilot underway: **Iain is rolling the AI tooling out to Roogenic
+  first.** Still open: what does success look like for this pilot, and
+  what's the timeline before it's ready to pitch to Alton Goods, Orange
+  Sherbet, and Elle & Riley? Is Bryan involved in building it, or is this
+  purely Iain's build right now? (Relevant since Bryan is actively
+  learning Claude Code as of this week.)
+- ✅ Confirmed: AI upsell is a parallel lever, not a substitute for new
+  sales — churn is inevitable eventually even though zero has occurred
+  among ICP merchants so far.
 - Nathan Bush re-engagement: turn the intention into a specific next
   step — when's the catch-up call, and what's the actual offer (sweetened
   commission? pro-bono session for a contact of his?).

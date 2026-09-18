@@ -9,28 +9,42 @@ conversation over a big upfront questionnaire.
 
 ## Boom Coaching & Consulting — urgent (sales/growth)
 
-- What does "better merchants" actually mean? (revenue range, niche,
-  red flags from past bad-fit merchants, ideal-customer profile)
-- Where do merchants currently come from? (referrals, content, ads, past
-  agency relationships, Shopify/Klaviyo partner referrals, events/speaking,
-  the podcast mention, etc.) Which channel actually converts vs. just
-  generates leads?
-- What does the current sales process look like end to end — first touch
-  to signed merchant? Where do prospects actually drop off?
-- Why has revenue plateaued at $8–11k/month each — best guess: not enough
-  leads, leads that don't convert, capacity/delivery bottleneck (can't
-  onboard more than X merchants at once), pricing resistance, or churn
-  eating into net growth?
-- What's monthly churn / average merchant lifetime? (Doubling revenue via
-  new sales is a different problem than doubling it while merchants leave
-  after 3 months.)
+**Answered — see `sales-pipeline.md` for full detail:**
+- ✅ "Better merchants" = $5M+ revenue, Shopify Plus, low hand-holding
+  (Alton Goods, Orange Sherbet, Roogenic are the model). Sub-$1M–$3M
+  merchants need more hand-holding, churn more, described as "too
+  emotional."
+- ✅ Lead sources: mostly referral, some SEO. Paid (FB ads, LinkedIn
+  outreach) has not worked at all.
+- ✅ Bottleneck is lead volume, not conversion — Bryan closes most leads
+  that reach him.
+
+**Still open:**
+- Who is **"Bushy"**? (referred both Alton Goods and Orange Sherbet — the
+  two best-fit merchants in the whole book. Understand the relationship
+  and whether more referrals can be asked for.)
+- Who/what is **"Studio Almond"**? (referred Odd Things and Heirest —
+  sounds like a partner agency. Same question: formalize/expand this?)
+- What does the current sales process look like end to end once a lead
+  does arrive — first touch to signed merchant? Where (if anywhere) do
+  good-fit leads still drop off?
+- What's monthly churn / average merchant lifetime, especially for the
+  sub-$1M "too emotional" segment vs. the $5M+ ICP? Is Boom still actively
+  accepting sub-$1M merchants, or is that a mistake to stop making?
 - Billing model — $1,950/merchant: monthly recurring, one-off, or per
-  engagement length?
-- Capacity ceiling — capped at 20 brands total, or 20 each, or something
-  else? How many active merchants right now vs. the cap?
+  engagement length? (Heirest's $5k/month GTM package suggests pricing is
+  more flexible than the standard rate — is that a template for other
+  $5M+ prospects, or a one-off?)
+- Capacity ceiling — capped at 20 brands total, or 20 each? How many
+  active merchants right now vs. that cap? (Matters for whether "more
+  sales" is even deliverable without more coaching capacity.)
 - The AI skill implementation/enablement upsell: what does it concretely
-  include? Rough price point in mind? Which merchant segment is it aimed
-  at (existing members upsell vs. a wedge to land new/bigger merchants)?
+  include? Rough price point? Aimed at existing members (upsell) or as a
+  wedge to land new/bigger merchants?
+- Does Boom actively ask happy merchants (especially $5M+ ones) for
+  referrals, or has referral growth so far been organic/unprompted? This
+  is probably the single highest-leverage question given referrals are
+  the only channel that's actually produced the ICP.
 
 ## vavavoom digital
 

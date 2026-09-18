@@ -90,3 +90,25 @@ conversation over a big upfront questionnaire.
   given he's also doing Shopify/finance support and vavavoom digital.
 - Preferred cadence for the "daily assistant" check-ins — same time each
   day, ad hoc, tied to specific decisions?
+
+## Data source not yet integrated: Iain's per-merchant session files
+
+Iain keeps his own files on the business and on **each merchant and each
+coaching session run with them** — real operational context (not just the
+strategic/sales-pipeline picture captured here). Not yet shared or reviewed.
+Once available, this should meaningfully sharpen everything in
+`boom-coaching.md` and `sales-pipeline.md` — especially per-merchant detail
+relevant to the AI-upsell rollout (Roogenic, then Alton Goods/OS/Elle &
+Riley).
+
+## Current stated plan (as of 2026-09-18)
+
+Bryan's own words: he'll **keep training/exploring with Claude Code over
+the coming days**, then **realign with Iain next week** specifically on:
+1. How Iain will share his Boom-relevant files (business + per-merchant/
+   per-session notes) with Bryan.
+2. Next steps on building out the AI-upsell package.
+
+Next session(s) should pick up from here — check whether that realignment
+with Iain has happened yet, and whether Iain's files have been shared and
+are ready to fold into this context base.

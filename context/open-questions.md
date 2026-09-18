@@ -40,11 +40,13 @@ conversation over a big upfront questionnaire.
 - What does the current sales process look like end to end once a lead
   does arrive — first touch to signed merchant? Where (if anywhere) do
   good-fit leads still drop off?
-- Bryan says he's now "trying to screen out non-good merchants and focus
-  on acquiring good size merchants only" — what does that screening
-  actually look like in practice today? A discovery-call checklist,
-  gut feel, a minimum-revenue cutoff stated upfront, something else? Is
-  it consistent, or does it slip under sales pressure?
+- ✅ Screening happens via **leading/qualifying questions on the website
+  contact form** — merchants self-select or get filtered before Bryan
+  ever talks to them. Still open: what exactly does the form ask, and is
+  it actually filtering out sub-$1M leads before they reach Bryan, or
+  just informing the conversation once they do? (Worth reviewing the
+  actual form questions against the confirmed ICP — $5M+, Shopify Plus —
+  to check they're aimed at the right bar.)
 - What's monthly churn / average merchant lifetime, especially for the
   sub-$1M "too emotional" segment vs. the $5M+ ICP? Is Boom still actively
   accepting sub-$1M merchants, or is that a mistake to stop making?

@@ -24,6 +24,29 @@ problems bundled in that sentence that need separating out:
 2. Quality/fit — not enough of the *right* merchants.
 See `open-questions.md` for what's still needed to act on this.
 
+## Claude Code / technical skill level
+
+- **Day 1 with Claude Code** (started 2026-09-18, this session) — first
+  time using a terminal, git, or Claude Code at all. Installed Node,
+  Homebrew, Xcode command line tools, and Claude Code locally for the
+  first time today.
+- **Iain, by contrast, is 6+ months into Claude Code** and already
+  "training his agent" — has an established setup/workflow. This gap is
+  expected and fine, not something to stress about, but it means:
+  - Iain leads technical builds (e.g. the Roogenic AI-tooling pilot) with
+    Bryan helping, not the reverse, for now.
+  - Bryan should lean on Iain's existing setup/skills rather than
+    reinventing from scratch — worth asking Iain to walk through what
+    "training his agent" actually means (CLAUDE.md files? custom Skills?
+    a particular workflow?) so Bryan isn't starting cold on top of
+    starting cold.
+  - Bryan's highest-value near-term contribution to the AI-upsell track is
+    probably *not* matching Iain's build skill immediately — it's
+    everything he's already strong at (merchant relationships, selling
+    the upgrade, Shopify/finance context) plus enough hands-on Claude Code
+    fluency to meaningfully assist and eventually run similar builds
+    solo.
+
 ## Working style / notes for Claude
 
 - New to development tooling (terminal, git, Claude Code) — walk through

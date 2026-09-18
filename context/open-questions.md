@@ -49,11 +49,14 @@ conversation over a big upfront questionnaire.
   ~$2-3k/mo add-on each. Tier 2 (smaller, lower confidence) = Hairgang,
   Millwood Shoes, Precision Tools, Odd Things, Heirest.
 - ✅ Pilot underway: **Iain is rolling the AI tooling out to Roogenic
-  first.** Still open: what does success look like for this pilot, and
-  what's the timeline before it's ready to pitch to Alton Goods, Orange
-  Sherbet, and Elle & Riley? Is Bryan involved in building it, or is this
-  purely Iain's build right now? (Relevant since Bryan is actively
-  learning Claude Code as of this week.)
+  first, leading the build, with help from Bryan.** Iain is 6+ months
+  into Claude Code with an established workflow ("training his agent");
+  Bryan started day 1 today. Still open: what does success look like for
+  this pilot, and what's the timeline before it's ready to pitch to Alton
+  Goods, Orange Sherbet, and Elle & Riley? Worth Bryan asking Iain to
+  explain his existing Claude Code setup (CLAUDE.md? custom skills?) so
+  Bryan builds on top of what Iain's already learned rather than starting
+  fully cold.
 - ✅ Confirmed: AI upsell is a parallel lever, not a substitute for new
   sales — churn is inevitable eventually even though zero has occurred
   among ICP merchants so far.

@@ -27,43 +27,47 @@ conversation over a big upfront questionnaire.
 - ✅ Studio Almond = a **design/dev house in New Zealand**. Referred Odd
   Things and Heirest.
 
-**Still open:**
-- Studio Almond's actual website/URL, so Claude can review it for more
-  context (this session can't fetch external sites — network sandboxed;
-  either paste a screenshot/summary, or check it via local Claude Code).
-- Has Bryan ever made a **direct, explicit ask** to Nathan Bush for more
-  referrals ("who else do you know like Alton Goods/Orange Sherbet"), or
-  have both referrals so far been unprompted? This is probably the
-  highest-leverage open action in the whole business.
-- Is the Studio Almond relationship formal (referral fee, standing
-  arrangement) or informal/personal? Worth formalizing either way?
+**Answered — see `boom-coaching.md` and `key-relationships.md`:**
+- ✅ Capacity: **10 active merchants, cap of 20** — room to double before
+  capacity is the constraint.
+- ✅ Churn: **only sub-$1M "bad fit" merchants have ever left**; zero
+  churn among $5M+/Shopify Plus (ICP) merchants so far.
+- ✅ AI upsell concept: custom Claude Code tooling built + customized per
+  merchant, staff trained to use it, access revoked if they leave Boom
+  (real lock-in). Bryan's framing: 10 merchants @ $5k/mo could beat 20 @
+  $2k/mo — **and since 10 merchants already exist today, upgrading the
+  current base may hit the $20k/month-each target faster than new sales.**
+- ✅ Screening happens via leading/qualifying questions on the website
+  contact form.
+- ✅ Nathan Bush: a **partnership commission was already set up** with him
+  a while back but has gone dormant. Bryan's plan: re-engage personally,
+  possibly with cash or pro-bono work as a thank-you/re-investment.
+
+**Still open, roughly in priority order:**
+- Of the current **10 active merchants**, how many are actually $5M+/
+  Shopify Plus ICP vs. still-active smaller ones? This determines how
+  much of the "upgrade existing base to $5k/mo AI tier" opportunity is
+  real right now vs. aspirational.
+- What would it actually take, operationally, to deliver the AI-embedded
+  tier to an existing $1,950–$2k merchant — is the tooling already built
+  (used with Heirest?), or does it need to be built per-merchant from
+  scratch? What's a realistic timeline to pilot this with 1–2 existing
+  merchants?
+- Nathan Bush re-engagement: turn the intention into a specific next
+  step — when's the catch-up call, and what's the actual offer (sweetened
+  commission? pro-bono session for a contact of his?).
+- Studio Almond: actual website/URL (can't fetch externally from this
+  session — paste it or check via local Claude Code), and whether that
+  referral relationship is formal or informal.
 - What does the current sales process look like end to end once a lead
-  does arrive — first touch to signed merchant? Where (if anywhere) do
-  good-fit leads still drop off?
-- ✅ Screening happens via **leading/qualifying questions on the website
-  contact form** — merchants self-select or get filtered before Bryan
-  ever talks to them. Still open: what exactly does the form ask, and is
-  it actually filtering out sub-$1M leads before they reach Bryan, or
-  just informing the conversation once they do? (Worth reviewing the
-  actual form questions against the confirmed ICP — $5M+, Shopify Plus —
-  to check they're aimed at the right bar.)
-- What's monthly churn / average merchant lifetime, especially for the
-  sub-$1M "too emotional" segment vs. the $5M+ ICP? Is Boom still actively
-  accepting sub-$1M merchants, or is that a mistake to stop making?
-- Billing model — $1,950/merchant: monthly recurring, one-off, or per
-  engagement length? (Heirest's $5k/month GTM package suggests pricing is
-  more flexible than the standard rate — is that a template for other
-  $5M+ prospects, or a one-off?)
-- Capacity ceiling — capped at 20 brands total, or 20 each? How many
-  active merchants right now vs. that cap? (Matters for whether "more
-  sales" is even deliverable without more coaching capacity.)
-- The AI skill implementation/enablement upsell: what does it concretely
-  include? Rough price point? Aimed at existing members (upsell) or as a
-  wedge to land new/bigger merchants?
-- Does Boom actively ask happy merchants (especially $5M+ ones) for
-  referrals, or has referral growth so far been organic/unprompted? This
-  is probably the single highest-leverage question given referrals are
-  the only channel that's actually produced the ICP.
+  arrives — first touch to signed merchant? Where do good-fit leads still
+  drop off, if anywhere?
+- What exactly does the contact form ask, and is it actually filtering
+  out sub-$1M leads before they reach Bryan, or just informing the
+  conversation once they do?
+- Billing model — is $1,950/merchant monthly recurring, one-off, or tied
+  to engagement length? Is Heirest's $5k/month GTM package a repeatable
+  template or a one-off?
 
 ## vavavoom digital
 

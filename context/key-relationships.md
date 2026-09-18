@@ -20,10 +20,17 @@ actively manage, not just historical lead sources.
   business.** Two-for-two on ICP-quality referrals, and clearly plugged
   into exactly the kind of $5M+ Shopify Plus founder network Boom wants
   more of.
-- Open action: has Bryan ever made a direct, explicit ask — "who else do
-  you know like Alton Goods or Orange Sherbet?" — or have both referrals
-  so far been unprompted? Worth turning this into a standing, repeated ask
-  rather than hoping for the next one organically.
+- **Already has a partnership commission arrangement set up with Bryan
+  from a while back** — but it's gone dormant; nothing has come from it
+  since it was set up.
+- Bryan's instinct: **re-engage** the partnership, and "lube him up" with
+  either cash or pro-bono work, acknowledging Nathan "has given me this
+  lifestyle" — i.e., treat this as re-investing in a real relationship,
+  not just re-sending a referral-program email.
+- Open action: turn "re-engage" into an actual next step — a specific
+  reach-out (catch-up call, not a cold ask), and a concrete offer (sweeten
+  the existing commission, or a pro-bono AI-skills session for one of his
+  contacts) rather than leaving it as a vague intention.
 
 ## Studio Almond
 

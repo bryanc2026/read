@@ -112,3 +112,37 @@ the coming days**, then **realign with Iain next week** specifically on:
 Next session(s) should pick up from here — check whether that realignment
 with Iain has happened yet, and whether Iain's files have been shared and
 are ready to fold into this context base.
+
+## Circle API integration (2026-10-22, Iain's initiative)
+
+Iain upgraded Boom's Circle community to the **Business plan** specifically
+to unlock API access. Stated goal, in Iain's words via Bryan:
+1. **Mass-write content** — posts, blogs, instructional content — into
+   Circle, easily and at volume.
+2. **Have Claude read the on-demand videos already set up in Circle** —
+   presumably so Claude has real context on what's already taught, for
+   writing new content or answering questions.
+
+Status: token not yet generated. Needs to happen via **local Claude Code**
+(this cloud session can't reach Circle's API — same network sandbox as
+everything else).
+
+Open technical questions to resolve when building this (flagged as
+genuinely uncertain, not assumed — verify against Circle's own current
+API docs when connecting):
+- Does Circle's API actually expose on-demand/course video content
+  directly (file URLs, auto-generated captions/transcripts), or are videos
+  embedded via a third party (Mux/Vimeo/etc.) that the API doesn't give
+  direct access to? This determines whether "Claude reads the videos" is a
+  straightforward transcript pull or needs a different approach (e.g.
+  manual export, or transcribing audio separately).
+- What does Circle's posts/content API actually support — rich formatting,
+  images, which space types (posts vs. courses vs. blog)?
+- Rate limits / bulk-write limits worth knowing before planning a genuine
+  mass-content workflow.
+
+Recommended approach once connected (not yet agreed with Bryan/Iain, just
+a sensible default): **draft-then-approve, not blind auto-publish** —
+content gets written/drafted via Claude, a human reviews before it goes
+live to the real community. Worth confirming this is actually the
+workflow Iain wants before building full auto-publish.

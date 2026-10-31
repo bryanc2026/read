@@ -5,7 +5,7 @@ export default function CoachProfile() {
   const { coach } = metaMethodPage;
 
   return (
-    <section className="bg-boom-cream py-20 md:py-28">
+    <section className="bg-boom-cream py-14 md:py-20">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Meet your coach</span>
@@ -16,6 +16,7 @@ export default function CoachProfile() {
             <PlaceholderImage
               label={`${coach.name} photo`}
               path={coach.photo}
+              src={coach.photoSrc}
               className="aspect-[4/5] w-full rounded-2xl shadow-card"
             />
             <blockquote className="mt-5 border-l-2 border-boom-yellow pl-4 text-sm italic text-boom-black/70">

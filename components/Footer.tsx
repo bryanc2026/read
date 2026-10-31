@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { footerLinks } from "@/lib/data";
 
 export default function Footer() {
@@ -5,11 +6,8 @@ export default function Footer() {
     <footer className="bg-boom-black py-14 text-white/60">
       <div className="container-content flex flex-col items-center gap-8 md:flex-row md:items-start md:justify-between">
         <div className="text-center md:text-left">
-          <div className="flex items-center justify-center gap-2 md:justify-start">
-            <span className="flex h-8 w-8 items-center justify-center rounded-md bg-boom-yellow font-display text-sm font-extrabold text-boom-black">
-              B
-            </span>
-            <span className="font-display text-base font-extrabold tracking-tight text-white">BOOM</span>
+          <div className="flex items-center justify-center md:justify-start">
+            <Image src="/images/boom-logo.png" alt="Boom Ecommerce" width={990} height={396} className="h-8 w-auto rounded-md" />
           </div>
           <p className="mt-4 max-w-xs text-sm">
             Ecommerce coaching for Shopify founders. Capped at 20 brands, so none of it goes to your competitors.

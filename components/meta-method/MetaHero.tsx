@@ -4,7 +4,7 @@ export default function MetaHero() {
   const { hero } = metaMethodPage;
 
   return (
-    <section className="pt-14 md:pt-20">
+    <section className="pt-10 md:pt-14">
       <div className="container-content pb-16 text-center md:pb-24">
         <span className="eyebrow">{hero.eyebrow}</span>
         <h1 className="mx-auto mt-4 max-w-3xl font-display text-[2.6rem] font-extrabold leading-[1.04] tracking-tight md:text-6xl">

@@ -16,15 +16,19 @@ const body = Inter({
   display: "swap",
 });
 
+// Matches the live site's title/description exactly (used identically across every
+// page there) to preserve existing SEO equity during the platform migration.
+const liveTitle = "Ecommerce coaching, training and consulting";
+const liveDescription =
+  "You have or work in an eCommerce business, but want to know what is working for other eCommerce businesses in Australia and New Zealand. You also want to build hands on skills to grow the business. You're in the right place.";
+
 export const metadata: Metadata = {
-  title: "Boom | Ecommerce Coaching for Shopify Founders",
-  description:
-    "Boom is a capped-capacity coaching community for ecommerce founders and marketers. Get a strategy built on your numbers, coached by operators who've scaled 8-figure brands.",
+  title: liveTitle,
+  description: liveDescription,
   metadataBase: new URL("https://coaching.boomecommerce.com.au"),
   openGraph: {
-    title: "Boom | Ecommerce Coaching for Shopify Founders",
-    description:
-      "A capped-capacity coaching community for ecommerce founders. We work with you, not your competitors.",
+    title: liveTitle,
+    description: liveDescription,
     type: "website",
   },
 };

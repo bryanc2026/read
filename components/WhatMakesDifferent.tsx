@@ -3,7 +3,7 @@ import PlaceholderImage from "./ui/PlaceholderImage";
 
 export default function WhatMakesDifferent() {
   return (
-    <section className="bg-boom-gray-50 py-20 md:py-28">
+    <section className="bg-boom-gray-50 py-14 md:py-20">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl font-extrabold tracking-tight md:text-4xl">
@@ -16,6 +16,7 @@ export default function WhatMakesDifferent() {
         <PlaceholderImage
           label={whatMakesDifferent.intro.imageAlt}
           path={whatMakesDifferent.intro.image}
+          src={whatMakesDifferent.intro.imageSrc}
           className="mx-auto mt-12 aspect-[16/9] w-full max-w-4xl rounded-2xl shadow-card"
         />
 

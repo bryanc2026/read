@@ -4,7 +4,7 @@ export default function Strategy() {
   const { strategy } = metaMethodPage;
 
   return (
-    <section className="bg-boom-cream py-20 md:py-28">
+    <section className="bg-boom-cream py-14 md:py-20">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl font-extrabold tracking-tight md:text-4xl">{strategy.title}</h2>

@@ -4,7 +4,7 @@ export default function NoLockIn() {
   const { noLockIn } = metaMethodPage;
 
   return (
-    <section className="bg-boom-cream py-20 md:py-24">
+    <section className="bg-boom-cream py-14 md:py-16">
       <div className="container-content">
         <div className="mx-auto max-w-2xl rounded-2xl border border-boom-black/10 bg-white p-8 text-center shadow-card md:p-10">
           <h2 className="font-display text-2xl font-extrabold tracking-tight md:text-3xl">{noLockIn.title}</h2>

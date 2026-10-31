@@ -5,7 +5,7 @@ export default function MetaTestimonials() {
   const items = testimonialsList.filter((t) => testimonials.names.includes(t.name));
 
   return (
-    <section className="bg-boom-gray-50 py-20 md:py-28">
+    <section className="bg-boom-gray-50 py-14 md:py-20">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl font-extrabold tracking-tight md:text-4xl">{testimonials.title}</h2>

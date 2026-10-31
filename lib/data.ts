@@ -1,13 +1,61 @@
 export type NavLink = { label: string; href: string; external?: boolean };
 export type NavItem = NavLink & { children?: NavLink[] };
 
+// Matches the live site's nav structure (About / Apply / Contact) plus the new Meta Method page.
 export const nav: NavItem[] = [
-  { label: "What You Get", href: "#what-you-get" },
-  { label: "Results", href: "#results" },
-  { label: "Coaches", href: "#coaches" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "FAQ", href: "#faq" },
+  { label: "About", href: "/about" },
+  { label: "Apply", href: "/apply" },
+  { label: "Contact", href: "/contact" },
   { label: "Boom Meta Method", href: "/boom-meta-method" },
+];
+
+// Free tools now live on their own pages (embedding the original tool via iframe)
+// instead of linking straight out to the external Netlify-hosted apps.
+export type FreeToolPage = {
+  slug: string;
+  title: string;
+  description: string;
+  src: string;
+};
+
+export const freeToolsPages: FreeToolPage[] = [
+  {
+    slug: "conversion-rate-calculator",
+    title: "Conversion Rate Calculator",
+    description: "Work out your ecommerce conversion rate and see how it stacks up.",
+    src: "https://rainbow-cucurucho-a71d53.netlify.app/conversion-calculator.html",
+  },
+  {
+    slug: "discount-calculator",
+    title: "Discount Calculator",
+    description: "Work out the real cost and margin impact of running a discount or promotion.",
+    src: "https://astounding-wisp-b7062b.netlify.app/1_discount_calculator",
+  },
+  {
+    slug: "mer-efficiency-calculator",
+    title: "MER Efficiency Calculator",
+    description:
+      "Work out your Marketing Efficiency Ratio (MER) and see how efficiently your ad spend is converting into revenue.",
+    src: "https://jovial-begonia-d82215.netlify.app/mer_calculator.html",
+  },
+  {
+    slug: "breakeven-profit-calculator",
+    title: "Breakeven & Profit Calculator",
+    description: "Find your breakeven point and see how pricing and costs affect your profit.",
+    src: "https://curious-heliotrope-d66607.netlify.app/breakeven-calculator.html",
+  },
+  {
+    slug: "aus-post-surcharge-calculator",
+    title: "Aus Post Surcharge Calculator",
+    description: "Calculate the Australia Post shipping surcharges that apply to your parcels.",
+    src: "https://sensational-swan-8529cb.netlify.app/embed.html",
+  },
+  {
+    slug: "aov-shipping-optimiser",
+    title: "AOV & Free Shipping Optimiser",
+    description: "Find the ideal free-shipping threshold to lift your average order value.",
+    src: "https://earnest-swan-6d855d.netlify.app/aov-calculator.html",
+  },
 ];
 
 // Mirrors the live site's right-hand nav cluster (coaching.boomecommerce.com.au)
@@ -15,18 +63,10 @@ export const utilityNav: { freeTools: NavItem; login: NavLink } = {
   freeTools: {
     label: "Free Tools",
     href: "#",
-    children: [
-      {
-        label: "MER Efficiency Calculator",
-        href: "https://magnificent-sprite-a5c0cd.netlify.app/",
-        external: true,
-      },
-      {
-        label: "Aus Post Surcharge Calculator",
-        href: "https://sensational-swan-8529cb.netlify.app/",
-        external: true,
-      },
-    ],
+    children: freeToolsPages.map((tool) => ({
+      label: tool.title,
+      href: `/free-tools/${tool.slug}`,
+    })),
   },
   login: {
     label: "Log in",
@@ -55,6 +95,14 @@ export const workedWith = {
   subhead:
     "Over the years, Iain & Bryan have worked with all types of ecommerce and retail businesses — from ASX-listed to influencer-led brands.",
   logos: ["Billabong", "Quiksilver", "Sheet Society", "Supercheap Auto", "al.ive Body", "BCF"],
+  logoImages: {
+    Billabong: "/images/logos/billabong.png",
+    Quiksilver: "/images/logos/quiksilver.png",
+    "Sheet Society": "/images/logos/sheet-society.png",
+    "Supercheap Auto": "/images/logos/supercheap-auto.png",
+    "al.ive Body": "/images/logos/alive-body.png",
+    BCF: "/images/logos/bcf.png",
+  } as Record<string, string>,
 };
 
 export type HowItWorksItem = {
@@ -207,6 +255,7 @@ export const whatMakesDifferent = {
     title: "We only work with 20 brands, and none of your competitors",
     body: "This lets you see truly how other ecommerce businesses operate, without fear of a competitor copying you. It also means more dedicated time from Iain and Bryan, working directly with you.",
     image: "/images/conference-stage.jpg",
+    imageSrc: "/images/iain-stage.jpg",
     imageAlt: "Iain presenting on stage at an ecommerce industry event",
   },
   cards: [
@@ -235,6 +284,7 @@ export type Coach = {
   name: string;
   role: string;
   photo: string;
+  photoSrc?: string;
   bio: string[];
   quote: { text: string; author: string; company?: string };
   badges: string[];
@@ -245,6 +295,7 @@ export const coaches: Coach[] = [
     name: "Iain Calvert",
     role: "Co-Founder & Coach",
     photo: "/images/coach-iain.jpg",
+    photoSrc: "/images/coach-iain.png",
     bio: [
       "I help Aussie ecommerce brands scale faster, spend smarter and sell more online.",
       "With 20+ years in ecommerce, I've worked with global retailers like Billabong, Quiksilver, Supercheap Auto and Terry White Chemmart, as well as hundreds of growing brands across Australia and the UK.",
@@ -269,6 +320,7 @@ export const coaches: Coach[] = [
     name: "Bryan Cleary",
     role: "Co-Founder & Coach",
     photo: "/images/coach-bryan.jpg",
+    photoSrc: "/images/coach-bryan.png",
     bio: [
       "I'm an Australian-based ecommerce consultant and trainer who has worked with the likes of Modibodi, The Block Shop, Tigerlily, Esther & Co, Al.ive Body, Oz Hair & Beauty, Camilla & Marc, Stussy and Rusty, alongside a range of owner-run Shopify brands.",
       "With 8+ years of Shopify Plus experience, I focus on ecommerce development, finance and strategy — taking a holistic approach to conversion rate optimisation across acquisition, conversion, retention, A/B testing and continuous improvement.",
@@ -360,11 +412,13 @@ export const featuredBy = {
   title: "As Featured By",
   subhead: "We've presented for and trained clients of",
   logos: ["Shopify", "Facebook", "Add To Cart", "SmartCompany", "Klaviyo"],
-};
-
-export const partners = {
-  title: "Official Partners Of",
-  logos: ["Meta Business Partners", "Klaviyo Partners", "Shopify Partner"],
+  logoImages: {
+    Shopify: "/images/logos/shopify.png",
+    Facebook: "/images/logos/facebook.png",
+    "Add To Cart": "/images/logos/add-to-cart.png",
+    SmartCompany: "/images/logos/smartcompany.png",
+    Klaviyo: "/images/logos/klaviyo.png",
+  } as Record<string, string>,
 };
 
 export const faqs = [
@@ -396,12 +450,36 @@ export const faqs = [
 
 export const footerLinks = {
   company: [
-    { label: "What You Get", href: "#what-you-get" },
-    { label: "Results", href: "#results" },
-    { label: "Coaches", href: "#coaches" },
-    { label: "Reviews", href: "#reviews" },
-    { label: "FAQ", href: "#faq" },
+    { label: "About", href: "/about" },
+    { label: "Apply", href: "/apply" },
+    { label: "Contact", href: "/contact" },
+    { label: "Boom Meta Method", href: "/boom-meta-method" },
   ],
+};
+
+export const aboutPage = {
+  hero: {
+    title: "A Community of Ecommerce Experts and Businesses Working Together to Grow Profitably",
+    lead: "Run by ecommerce experts Bryan & Iain, who've worked for some of the best agencies and biggest brands in Australia.",
+    body: "Set up to help ecommerce owners and marketers make sense of what's happening in their business and which levers to pull to be successful.",
+  },
+  values: {
+    eyebrow: "Values",
+    items: [
+      {
+        title: "No Junior Bergers",
+        body: "Ever been sold the dream by the senior people in a business, only to end up working with the grad? At Boom you work with Bryan and Iain, who cut their teeth in agencies and ecommerce brands.",
+      },
+      {
+        title: "Profit Focused",
+        body: "There's so much more to ecommerce than spending more on Facebook Ads. Using our tried-and-tested framework, we coach brands to grow profitably by looking at the entire picture — margins, stock levels, all marketing channels, team and the overall market.",
+      },
+      {
+        title: "Action Over Talk",
+        body: "You get results by doing things. We're focused on giving you and your team everything you need to execute — coaching, insights and technical click-by-click training.",
+      },
+    ],
+  },
 };
 
 export const metaMethodPage = {
@@ -441,6 +519,7 @@ export const metaMethodPage = {
     name: "Iain Calvert",
     role: "Ecommerce Coach, Consultant and “Enthusiastic” Surfer",
     photo: "/images/coach-iain.jpg",
+    photoSrc: "/images/coach-iain.png",
     bio: [
       "I help Aussie ecommerce brands scale faster, spend smarter and sell more online.",
       "With 20+ years in ecommerce, I've worked with global retailers like Billabong, Quiksilver, Supercheap Auto and Terry White Chemmart, as well as hundreds of growing brands across Australia and the UK.",
@@ -499,14 +578,17 @@ export const metaMethodPage = {
       {
         title: "Consistent Sales Growth",
         body: "This NZ brand started working with Boom and has seen consistent sales growth.",
+        imageSrc: "/images/results/result-1.jpg",
       },
       {
         title: "104% Year on Year Growth",
         body: "Increasing sales year on year is the goal while managing costs. With Boom's help, this Aussie brand has seen significant growth without sacrificing profit.",
+        imageSrc: "/images/results/result-2.jpg",
       },
       {
         title: "Consistent Year on Year Growth",
         body: "By understanding how Meta works and what strategies work for ecommerce brands, this business has seen year-over-year growth.",
+        imageSrc: "/images/results/result-3.jpg",
       },
       {
         title: "What Good Meta Results Look Like",
@@ -614,4 +696,63 @@ export const metaMethodPage = {
     },
   ],
   faqFooter: "Have more questions? I'm happy to answer them personally.",
+};
+
+// Remarketing landing page — implicit contrast against large generic coaching programs.
+// Deliberately doesn't name any competitor, matching the same rule used for paid ads.
+export const switchPage = {
+  hero: {
+    eyebrow: "For Founders Who've Outgrown Generic Coaching",
+    title: "20 Brands. Not 4,000.",
+    subhead:
+      "Coaching where the coach already knows what you sell — and will tell you when not to spend more, not just when to.",
+    cta: "See If You're a Fit",
+  },
+  intro: {
+    title: "Sound Familiar?",
+    body: "If you've been part of a big coaching program before, some of this might ring a bell.",
+  },
+  painPoints: [
+    {
+      problem: "Lost in the Crowd",
+      problemBody:
+        "Packed group calls where your question never gets answered. You joined for guidance, but you're just another name on a roster.",
+      answer: "Capped at 20 Brands",
+      answerBody: "We know every member by name — and so does every coach in the room.",
+    },
+    {
+      problem: "Advice You Could Google",
+      problemBody:
+        "Coaches ask what you sell on the call, then hand you advice you could've found in a blog post.",
+      answer: "We've Already Seen Your Numbers",
+      answerBody:
+        "You work with Iain or Bryan directly, the same person every time — not a rotating roster of junior account managers.",
+    },
+    {
+      problem: "Spend More, Never Slow Down",
+      problemBody:
+        "A playbook that only points one direction: spend more. No one asks about your margin, your stock costs, or your cash flow.",
+      answer: "Your Numbers Comes First",
+      answerBody:
+        "Gross margin after COGS, shipping and fees — tracked properly. We'll tell you when not to spend more.",
+    },
+    {
+      problem: "Locked In For a Year",
+      problemBody: "A short trial that quietly rolls into a 12-month contract with an auto-renewal clause.",
+      answer: "Month to Month, Always",
+      answerBody: "No lock-in contracts. If you want to leave, it's 30 days' notice — no fine print.",
+    },
+    {
+      problem: "Feels Like a Club, Not Coaching",
+      problemBody:
+        "More group hype and networking than actual strategy — a community that feels more like a fan club than a coaching program.",
+      answer: "Real Strategy, Not Hype",
+      answerBody:
+        "Small enough to be genuinely personal, run by operators who've actually run 8-figure ecommerce brands.",
+    },
+  ],
+  cta: {
+    title: "Ready for Coaching That Actually Fits?",
+    body: "Spots are capped at 20 brands, and we only take on businesses we know we can help. Let's talk and find out.",
+  },
 };

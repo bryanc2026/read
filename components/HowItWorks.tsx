@@ -3,7 +3,7 @@ import Icon, { IconName } from "./ui/Icon";
 
 export default function HowItWorks() {
   return (
-    <section id="what-you-get" className="bg-boom-cream py-20 md:py-28">
+    <section id="what-you-get" className="bg-boom-cream py-14 md:py-20">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">What you get</span>

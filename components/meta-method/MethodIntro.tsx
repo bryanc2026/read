@@ -4,7 +4,7 @@ export default function MethodIntro() {
   const { intro } = metaMethodPage;
 
   return (
-    <section className="bg-boom-black py-20 text-white md:py-28">
+    <section className="bg-boom-black py-14 text-white md:py-20">
       <div className="container-content mx-auto max-w-2xl text-center">
         <span className="text-xs font-bold uppercase tracking-[0.18em] text-boom-yellow">{intro.eyebrow}</span>
         <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight md:text-4xl">{intro.title}</h2>

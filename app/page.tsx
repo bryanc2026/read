@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Differentiators from "@/components/Differentiators";
@@ -14,13 +15,23 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import { workedWith } from "@/lib/data";
 
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
+
 export default function Home() {
   return (
     <main>
       <Header />
       <Hero />
       <Differentiators />
-      <LogoWall title={workedWith.title} subhead={workedWith.subhead} logos={workedWith.logos} theme="dark" />
+      <LogoWall
+        title={workedWith.title}
+        subhead={workedWith.subhead}
+        logos={workedWith.logos}
+        logoImages={workedWith.logoImages}
+        theme="dark"
+      />
       <HowItWorks />
       <Results />
       <WhatMakesDifferent />

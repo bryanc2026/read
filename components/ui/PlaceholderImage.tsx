@@ -1,11 +1,22 @@
+import Image from "next/image";
+
 type PlaceholderImageProps = {
   label: string;
   path: string;
   className?: string;
   variant?: "photo" | "portrait";
+  src?: string;
 };
 
-export default function PlaceholderImage({ label, path, className = "", variant = "photo" }: PlaceholderImageProps) {
+export default function PlaceholderImage({ label, path, className = "", src }: PlaceholderImageProps) {
+  if (src) {
+    return (
+      <div className={`relative overflow-hidden ${className}`}>
+        <Image src={src} alt={label} fill className="object-cover" />
+      </div>
+    );
+  }
+
   return (
     <div
       className={`relative flex items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_30%_20%,#232323_0%,#0B0B0C_60%)] ${className}`}

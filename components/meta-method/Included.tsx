@@ -5,7 +5,7 @@ export default function Included() {
   const { included } = metaMethodPage;
 
   return (
-    <section className="bg-boom-gray-50 py-20 md:py-28">
+    <section className="bg-boom-gray-50 py-14 md:py-20">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">{included.eyebrow}</span>

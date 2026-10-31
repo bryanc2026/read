@@ -2,7 +2,7 @@ import { faqs } from "@/lib/data";
 
 export default function FAQ() {
   return (
-    <section id="faq" className="bg-boom-cream py-20 md:py-28">
+    <section id="faq" className="bg-boom-cream py-14 md:py-20">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">FAQ</span>

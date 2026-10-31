@@ -5,7 +5,7 @@ export default function CoachingSteps() {
   const { coachingSteps } = metaMethodPage;
 
   return (
-    <section className="bg-boom-cream py-20 md:py-28">
+    <section className="bg-boom-cream py-14 md:py-20">
       <div className="container-content grid gap-12 md:grid-cols-[1fr_320px] md:gap-14">
         <div>
           <span className="eyebrow">How it works</span>
@@ -34,8 +34,9 @@ export default function CoachingSteps() {
 
         <div>
           <PlaceholderImage
-            label="Iain speaking at Retail Fest"
+            label="Iain speaking at an ecommerce industry event"
             path="/images/iain-speaking.jpg"
+            src="/images/iain-stage.jpg"
             className="aspect-[4/5] w-full rounded-2xl shadow-card"
           />
           <p className="mt-4 text-sm leading-relaxed text-boom-black/60">

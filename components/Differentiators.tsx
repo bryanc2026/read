@@ -3,7 +3,7 @@ import Icon from "./ui/Icon";
 
 export default function Differentiators() {
   return (
-    <section className="bg-boom-black py-20 text-white md:py-28">
+    <section className="bg-boom-black py-14 text-white md:py-20">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
           <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-boom-yellow text-boom-black">

@@ -27,7 +27,7 @@ export default function CoachingSteps() {
             ))}
           </ol>
 
-          <a href="#cta" className="btn-primary mt-10 inline-flex">
+          <a href="/apply" className="btn-primary mt-10 inline-flex">
             {coachingSteps.cta}
           </a>
         </div>

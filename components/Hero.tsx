@@ -12,7 +12,7 @@ export default function Hero() {
             A capped-capacity coaching community for Shopify founders, owners and marketers who are done guessing — and ready to scale profitably with a coach in their corner.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a href="#cta" className="btn-primary">
+            <a href="/apply" className="btn-primary">
               Talk With Us
             </a>
             <a href="#results" className="btn-secondary">

@@ -9,7 +9,7 @@ export default function Qualification() {
             {qualification.title}
           </h2>
           <p className="mx-auto mt-4 max-w-md text-white/60 md:mx-0">{qualification.body}</p>
-          <a href="#cta" className="btn-primary mt-7 inline-flex">
+          <a href="/apply" className="btn-primary mt-7 inline-flex">
             {qualification.cta}
           </a>
         </div>
@@ -19,7 +19,7 @@ export default function Qualification() {
             {qualification.policy.title}
           </h2>
           <p className="mx-auto mt-4 max-w-md text-white/60 md:mx-0">{qualification.policy.body}</p>
-          <a href="#cta" className="btn-primary mt-7 inline-flex">
+          <a href="/apply" className="btn-primary mt-7 inline-flex">
             {qualification.policy.cta}
           </a>
         </div>

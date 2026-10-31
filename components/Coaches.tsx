@@ -3,7 +3,7 @@ import PlaceholderImage from "./ui/PlaceholderImage";
 
 export default function Coaches() {
   return (
-    <section id="coaches" className="bg-boom-cream py-14 md:py-20">
+    <section id="coaches" className="bg-boom-cream pb-14 pt-8 md:pb-20 md:pt-12">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Your coaches</span>

@@ -5,7 +5,7 @@ export default function CoachProfile() {
   const { coach } = metaMethodPage;
 
   return (
-    <section className="bg-boom-cream py-14 md:py-20">
+    <section className="bg-boom-cream pb-14 pt-6 md:pb-20 md:pt-8">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Meet your coach</span>

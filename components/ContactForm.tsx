@@ -20,13 +20,19 @@ export default function ContactForm({ source, includeBusinessFields = false }: P
     const form = e.currentTarget;
     const data = new FormData(form);
 
+    const rawWebsiteUrl = String(data.get("websiteUrl") || "").trim();
+
     const payload = {
       source,
       fullName: String(data.get("fullName") || ""),
       email: String(data.get("email") || ""),
       yearlyRevenue: String(data.get("yearlyRevenue") || "") || undefined,
       teamSize: String(data.get("teamSize") || "") || undefined,
-      websiteUrl: String(data.get("websiteUrl") || "") || undefined,
+      websiteUrl: rawWebsiteUrl
+        ? /^https?:\/\//i.test(rawWebsiteUrl)
+          ? rawWebsiteUrl
+          : `https://${rawWebsiteUrl}`
+        : undefined,
     };
 
     try {
@@ -87,7 +93,14 @@ export default function ContactForm({ source, includeBusinessFields = false }: P
             <label htmlFor="websiteUrl" className={labelClass}>
               Website URL
             </label>
-            <input id="websiteUrl" name="websiteUrl" type="url" className={inputClass} />
+            <input
+              id="websiteUrl"
+              name="websiteUrl"
+              type="text"
+              inputMode="url"
+              placeholder="yourbrand.com.au"
+              className={inputClass}
+            />
           </div>
         </>
       )}

@@ -185,68 +185,20 @@ export const howItWorks: { title: string; subhead: string; items: HowItWorksItem
   ],
 };
 
-export type ResultStat = {
-  headline: string;
-  bullets: string[];
-  trend: number[];
+export type MemberResultImage = {
+  src: string;
+  alt: string;
 };
 
-export const resultStats: ResultStat[] = [
-  {
-    headline: "60% Increase Year on Year",
-    bullets: [
-      "Building product anticipation",
-      "Reducing ad spend in key periods",
-      "Mixing email marketing with ads",
-    ],
-    trend: [10, 12, 11, 14, 13, 42, 18, 46, 20, 24, 26],
-  },
-  {
-    headline: "Solid, Reliable Growth",
-    bullets: [
-      "Using the Boom Meta Method",
-      "Fixing Google Ads tracking",
-      "Learning profitable promotions",
-    ],
-    trend: [8, 10, 11, 13, 16, 18, 22, 26, 30, 34, 38],
-  },
-  {
-    headline: "84% Year on Year Increase",
-    bullets: [
-      "Focusing on AOV",
-      "Managing supplier costs",
-      "Learning profitable promotions",
-    ],
-    trend: [14, 16, 15, 18, 20, 24, 22, 26, 30, 34, 40],
-  },
-  {
-    headline: "104% Year on Year Growth",
-    bullets: [
-      "Managing ad spend with the Your Numbers approach",
-      "Timed product launches",
-      "Taking Google Ads management in-house",
-    ],
-    trend: [6, 7, 7, 8, 9, 12, 20, 34, 46, 54, 60],
-  },
-  {
-    headline: "87% Increase in UK Sales",
-    bullets: [
-      "Building a site designed for different markets",
-      "Timing promotions",
-      "Managing ads in-house for better results",
-    ],
-    trend: [12, 14, 13, 34, 20, 18, 22, 20, 26, 30, 34],
-  },
-  {
-    headline: "$800K in One Week",
-    bullets: [
-      "Launching promotions early to VIP groups",
-      "Advertising when costs were low",
-      "Increasing and decreasing Meta spend at the right time",
-    ],
-    trend: [10, 12, 30, 22, 16, 14, 15, 16, 18, 20, 22],
-  },
-];
+export const memberResults = {
+  title: "Real Results From Real Members",
+  subhead: "Member-reported outcomes from inside the Boom community.",
+  images: [
+    { src: "/images/results/result-2.jpg", alt: "Boom member Shopify dashboard showing total sales growing to $2,967,865.62 across 2023" },
+    { src: "/images/results/result-3.jpg", alt: "Boom member Shopify dashboard showing total sales growing to $13,594,654.79 across 2023" },
+    { src: "/images/results/result-1.jpg", alt: "Boom member Shopify dashboard showing total sales growing to $99,062.70 across 2023" },
+  ] satisfies MemberResultImage[],
+};
 
 export const whatMakesDifferent = {
   eyebrow: "Objection: aren't all coaching programs the same?",
@@ -570,7 +522,6 @@ export const metaMethodPage = {
     cta: "Contact us",
   },
   results: {
-    label: "Boom Member Results",
     title: "Boom Members' Results",
     subhead:
       "The Boom Meta Method has been developed over years of working in ecommerce and adapted to the way Meta Ads currently works.",
@@ -578,21 +529,22 @@ export const metaMethodPage = {
       {
         title: "Consistent Sales Growth",
         body: "This NZ brand started working with Boom and has seen consistent sales growth.",
-        imageSrc: "/images/results/result-1.jpg",
+        imageSrc: "/images/results/meta-sales-nz-298k.png",
       },
       {
         title: "104% Year on Year Growth",
         body: "Increasing sales year on year is the goal while managing costs. With Boom's help, this Aussie brand has seen significant growth without sacrificing profit.",
-        imageSrc: "/images/results/result-2.jpg",
+        imageSrc: "/images/results/meta-sales-aus-104pct.png",
       },
       {
         title: "Consistent Year on Year Growth",
         body: "By understanding how Meta works and what strategies work for ecommerce brands, this business has seen year-over-year growth.",
-        imageSrc: "/images/results/result-3.jpg",
+        imageSrc: "/images/results/meta-sales-nz-827k.png",
       },
       {
         title: "What Good Meta Results Look Like",
         body: "Using the Boom Meta Method, this Aussie ecommerce brand is getting $8.37 back for every dollar spent on Meta.",
+        imageSrc: "/images/results/meta-roas-table.png",
       },
     ],
   },
@@ -600,6 +552,9 @@ export const metaMethodPage = {
     title: "We're a Meta Business Partner",
     subhead: "We've used insights from working with Meta to develop the Boom Meta Method.",
     logos: ["Meta Business Partners"],
+    logoImages: {
+      "Meta Business Partners": "/images/logos/meta-business-partners.jpg",
+    } as Record<string, string>,
   },
   coachingSteps: {
     eyebrow: "Ecommerce Industry Expert",

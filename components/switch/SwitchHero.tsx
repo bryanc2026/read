@@ -12,7 +12,7 @@ export default function SwitchHero() {
         </h1>
         <p className="mx-auto mt-5 max-w-xl text-lg text-boom-black/70">{hero.subhead}</p>
         <div className="mt-8 flex justify-center">
-          <a href="#cta" className="btn-primary">
+          <a href="/apply" className="btn-primary">
             {hero.cta}
           </a>
         </div>

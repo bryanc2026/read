@@ -27,7 +27,7 @@ export default function Strategy() {
 
         <div className="mt-12 text-center">
           <p className="text-sm font-semibold text-boom-black/60">{strategy.footnote}</p>
-          <a href="#cta" className="btn-primary mt-6 inline-flex">
+          <a href="/apply" className="btn-primary mt-6 inline-flex">
             {strategy.cta}
           </a>
         </div>

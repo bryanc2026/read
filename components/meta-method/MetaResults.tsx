@@ -5,11 +5,10 @@ export default function MetaResults() {
   const { results } = metaMethodPage;
 
   return (
-    <section className="bg-boom-gray-50 py-14 md:py-20">
+    <section className="bg-boom-gray-50 pb-14 pt-6 md:pb-20 md:pt-8">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">{results.label}</span>
-          <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight md:text-4xl">{results.title}</h2>
+          <h2 className="font-display text-3xl font-extrabold tracking-tight md:text-4xl">{results.title}</h2>
           <p className="mt-4 text-lg text-boom-black/65">{results.subhead}</p>
         </div>
 

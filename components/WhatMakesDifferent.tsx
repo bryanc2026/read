@@ -3,7 +3,7 @@ import PlaceholderImage from "./ui/PlaceholderImage";
 
 export default function WhatMakesDifferent() {
   return (
-    <section className="bg-boom-gray-50 py-14 md:py-20">
+    <section className="border-t border-boom-black/10 bg-boom-gray-50 pb-14 pt-8 md:pb-20 md:pt-12">
       <div className="container-content">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl font-extrabold tracking-tight md:text-4xl">
@@ -30,7 +30,7 @@ export default function WhatMakesDifferent() {
         </div>
 
         <div className="mt-14 text-center">
-          <a href="#cta" className="btn-primary">
+          <a href="/apply" className="btn-primary">
             {whatMakesDifferent.cta}
           </a>
           <p className="mt-4 text-sm font-medium text-boom-black/50">{whatMakesDifferent.ctaSubtext}</p>

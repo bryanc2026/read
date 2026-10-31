@@ -37,6 +37,7 @@ export default function BoomMetaMethodPage() {
         title={metaMethodPage.partner.title}
         subhead={metaMethodPage.partner.subhead}
         logos={metaMethodPage.partner.logos}
+        logoImages={metaMethodPage.partner.logoImages}
         theme="dark"
       />
       <CoachingSteps />

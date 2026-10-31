@@ -37,7 +37,7 @@ export default function HowItWorks() {
               )}
 
               {item.cta && (
-                <a href="#cta" className="btn-primary-inverted mt-6 self-start">
+                <a href="/apply" className="btn-primary-inverted mt-6 self-start">
                   {item.cta}
                 </a>
               )}

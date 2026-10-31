@@ -11,23 +11,29 @@ type LogoWallProps = {
 export default function LogoWall({ title, subhead, logos, logoImages, theme = "dark" }: LogoWallProps) {
   const isDark = theme === "dark";
   return (
-    <section className={isDark ? "bg-boom-black py-14 text-white md:py-16" : "bg-boom-gray-50 py-14 md:py-16"}>
+    <section
+      className={
+        isDark
+          ? "border-t border-white/10 bg-boom-black pb-14 pt-8 text-white md:pb-16 md:pt-12"
+          : "border-t border-boom-black/10 bg-boom-gray-50 pb-14 pt-8 md:pb-16 md:pt-12"
+      }
+    >
       <div className="container-content text-center">
         <h2 className="font-display text-2xl font-extrabold tracking-tight md:text-3xl">{title}</h2>
         {subhead && (
-          <p className={`mx-auto mt-3 max-w-xl text-sm md:text-base ${isDark ? "text-white/55" : "text-boom-black/60"}`}>
+          <p className={`mx-auto mt-3 max-w-2xl text-sm md:text-base ${isDark ? "text-white/55" : "text-boom-black/60"}`}>
             {subhead}
           </p>
         )}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-8">
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-8">
           {logos.map((logo) =>
             logoImages?.[logo] ? (
-              <div key={logo} className="flex h-20 w-40 items-center justify-center md:h-24 md:w-48">
+              <div key={logo} className="flex h-20 w-28 items-center justify-center md:h-28 md:w-36">
                 <Image
                   src={logoImages[logo]}
                   alt={logo}
                   width={300}
-                  height={150}
+                  height={300}
                   className="max-h-full max-w-full object-contain"
                 />
               </div>

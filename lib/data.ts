@@ -185,20 +185,66 @@ export const howItWorks: { title: string; subhead: string; items: HowItWorksItem
   ],
 };
 
-export type MemberResultImage = {
-  src: string;
-  alt: string;
+export type ResultStat = {
+  headline: string;
+  bullets: string[];
 };
 
-export const memberResults = {
-  title: "Real Results From Real Members",
-  subhead: "Member-reported outcomes from inside the Boom community.",
-  images: [
-    { src: "/images/results/result-2.jpg", alt: "Boom member Shopify dashboard showing total sales growing to $2,967,865.62 across 2023" },
-    { src: "/images/results/result-3.jpg", alt: "Boom member Shopify dashboard showing total sales growing to $13,594,654.79 across 2023" },
-    { src: "/images/results/result-1.jpg", alt: "Boom member Shopify dashboard showing total sales growing to $99,062.70 across 2023" },
-  ] satisfies MemberResultImage[],
+export const resultStatsSection = {
+  title: "Boom Member Results",
+  subhead: "Real results from members in the Boom community.",
 };
+
+export const resultStats: ResultStat[] = [
+  {
+    headline: "60% Increase Year on Year",
+    bullets: [
+      "Building product anticipation",
+      "Reducing ad spend in key periods",
+      "Mixing email marketing with ads",
+    ],
+  },
+  {
+    headline: "Solid, Reliable Growth",
+    bullets: [
+      "Using the Boom Meta Method",
+      "Fixing Google Ads tracking",
+      "Learning profitable promotions",
+    ],
+  },
+  {
+    headline: "84% Year on Year Increase",
+    bullets: [
+      "Focusing on AOV",
+      "Managing supplier costs",
+      "Learning profitable promotions",
+    ],
+  },
+  {
+    headline: "104% Year on Year Growth",
+    bullets: [
+      "Managing ad spend with the Your Numbers approach",
+      "Timed product launches",
+      "Taking Google Ads management in-house",
+    ],
+  },
+  {
+    headline: "87% Increase in UK Sales",
+    bullets: [
+      "Building a site designed for different markets",
+      "Timing promotions",
+      "Managing ads in-house for better results",
+    ],
+  },
+  {
+    headline: "$800K in One Week",
+    bullets: [
+      "Launching promotions early to VIP groups",
+      "Advertising when costs were low",
+      "Increasing and decreasing Meta spend at the right time",
+    ],
+  },
+];
 
 export const whatMakesDifferent = {
   eyebrow: "Objection: aren't all coaching programs the same?",

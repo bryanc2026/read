@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { memberResults } from "@/lib/data";
+import { resultStats, resultStatsSection } from "@/lib/data";
 
 export default function Results() {
   return (
@@ -8,32 +7,31 @@ export default function Results() {
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Member results</span>
           <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight md:text-4xl">
-            {memberResults.title}
+            {resultStatsSection.title}
           </h2>
-          <p className="mt-4 text-lg text-boom-black/65">{memberResults.subhead}</p>
+          <p className="mt-4 text-lg text-boom-black/65">{resultStatsSection.subhead}</p>
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {memberResults.images.map((image) => (
+          {resultStats.map((stat) => (
             <div
-              key={image.src}
-              className="overflow-hidden rounded-2xl border border-boom-black/10 bg-white shadow-card"
+              key={stat.headline}
+              className="flex flex-col rounded-2xl border border-boom-black/10 bg-white p-6 shadow-card"
             >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={1170}
-                height={1240}
-                className="h-auto w-full"
-              />
+              <h3 className="font-display text-xl font-extrabold leading-snug">{stat.headline}</h3>
+              <ul className="mt-4 space-y-2">
+                {stat.bullets.map((bullet) => (
+                  <li key={bullet} className="flex items-start gap-2 text-sm text-boom-black/65">
+                    <span aria-hidden="true">📈</span>
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+              <a href="/apply" className="btn-primary-inverted mt-6 self-start">
+                Talk to us
+              </a>
             </div>
           ))}
-        </div>
-
-        <div className="mt-10 text-center">
-          <a href="/apply" className="btn-primary-inverted">
-            Talk to Us
-          </a>
         </div>
       </div>
     </section>

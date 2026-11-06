@@ -1,8 +1,8 @@
-import { metaMethodPage, testimonialsList } from "@/lib/data";
+import { metaMethodPage, testimonialsListPrimary } from "@/lib/data";
 
 export default function MetaTestimonials() {
   const { testimonials } = metaMethodPage;
-  const items = testimonialsList.filter((t) => testimonials.names.includes(t.name));
+  const items = testimonialsListPrimary.filter((t) => testimonials.names.includes(t.name));
 
   return (
     <section className="bg-boom-gray-50 py-14 md:py-20">

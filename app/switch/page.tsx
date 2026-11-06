@@ -5,7 +5,7 @@ import Testimonials from "@/components/Testimonials";
 import CTASection from "@/components/CTASection";
 import SwitchHero from "@/components/switch/SwitchHero";
 import PainPoints from "@/components/switch/PainPoints";
-import { switchPage } from "@/lib/data";
+import { switchPage, testimonialsSectionPrimary, testimonialsListPrimary } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Coaching That Actually Fits | Boom",
@@ -28,7 +28,11 @@ export default function SwitchPage() {
         </div>
       </section>
 
-      <Testimonials />
+      <Testimonials
+        title={testimonialsSectionPrimary.title}
+        subhead={testimonialsSectionPrimary.subhead}
+        testimonials={testimonialsListPrimary}
+      />
       <CTASection />
       <Footer />
     </main>

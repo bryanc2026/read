@@ -362,12 +362,17 @@ export type Testimonial = {
   logoSrc?: string;
 };
 
-export const testimonialsSection = {
+export const testimonialsSectionPrimary = {
+  title: "Real Ecommerce & Retail Business. Real Growth",
+  subhead: "We work with founders, general managers, marketers and everyone in between.",
+};
+
+export const testimonialsSectionSecondary = {
   title: "Brands Big & Small Love Working with Iain & Bryan",
   subhead: "We work with founders, general managers, marketers and everyone in between.",
 };
 
-export const testimonialsList: Testimonial[] = [
+export const testimonialsListPrimary: Testimonial[] = [
   {
     name: "Sam Schumann",
     role: "Alton",
@@ -402,6 +407,9 @@ export const testimonialsList: Testimonial[] = [
     quote:
       "Boom Ecommerce Coaching has been a turning point for us. With Iain and Bryan's guidance, we optimised ad spend, learnt to measure the metrics that matter, and built a clear strategy for growth. The results speak for themselves, stronger profits, better decisions, and real confidence in our direction. I wish we had done this a year ago!",
   },
+];
+
+export const testimonialsListSecondary: Testimonial[] = [
   {
     name: "Yon Carricaburu",
     role: "Quiksilver",
@@ -442,6 +450,11 @@ export const featuredBy = {
     JAM: "/images/logos/jam.jpg",
     "Shark Tank": "/images/logos/shark-tank.png",
   } as Record<string, string>,
+};
+
+export const memberSuccess = {
+  title: "Member Success",
+  body: "JAM the Label was selected to go on Shark Tank. They secured an investment offer from one of the Sharks. We helped them build up sales and prepare for the show, making sure they were across their key numbers.",
 };
 
 export const faqs = [

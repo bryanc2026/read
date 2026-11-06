@@ -27,15 +27,15 @@ export default function LogoWall({ title, subhead, logos, logoImages, theme = "d
             {subhead}
           </p>
         )}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-8">
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-5 gap-y-8">
           {logos.map((logo) =>
             logoImages?.[logo] ? (
               <div
                 key={logo}
                 className={
                   badged
-                    ? "flex h-20 w-28 items-center justify-center overflow-hidden rounded-xl bg-white p-3 shadow-card md:h-28 md:w-36"
-                    : "flex h-20 w-28 items-center justify-center md:h-28 md:w-36"
+                    ? "flex h-20 w-28 items-center justify-center overflow-hidden rounded-xl bg-white p-3 shadow-card md:h-28 md:w-36 lg:h-24 lg:w-32"
+                    : "flex h-20 w-28 items-center justify-center md:h-28 md:w-36 lg:h-24 lg:w-32"
                 }
               >
                 <Image

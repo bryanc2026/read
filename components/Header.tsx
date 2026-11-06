@@ -65,9 +65,9 @@ export default function Header() {
           <Image
             src="/images/boom-logo.png"
             alt="Boom Ecommerce, back to homepage"
-            width={990}
-            height={396}
-            className="h-12 w-auto rounded-md md:h-14"
+            width={1000}
+            height={1000}
+            className="h-12 w-12 rounded-md md:h-14 md:w-14"
             priority
           />
         </Link>

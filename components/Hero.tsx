@@ -25,9 +25,9 @@ export default function Hero() {
         </div>
 
         <PlaceholderImage
-          label="Iain presenting on stage"
-          path="/images/hero-stage.jpg"
-          src="/images/iain-stage.jpg"
+          label="Iain presenting on stage at Retail Fest"
+          path="/images/hero-retailfest.jpg"
+          src="/images/iain-retailfest.jpg"
           className="aspect-[4/3] w-full rounded-2xl shadow-card"
         />
       </div>

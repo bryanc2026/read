@@ -1,4 +1,33 @@
-import { resultStats, resultStatsSection } from "@/lib/data";
+import Image from "next/image";
+import { resultStatsPrimary, resultStatsSecondary, resultStatsSection, strategySection, type ResultStat } from "@/lib/data";
+
+function ResultCard({ stat }: { stat: ResultStat }) {
+  return (
+    <div className="flex flex-col rounded-2xl border border-boom-black/10 bg-white p-6 shadow-card">
+      <h3 className="font-display text-xl font-extrabold leading-snug">{stat.headline}</h3>
+      <div className="mt-4 overflow-hidden rounded-xl border border-boom-black/10">
+        <Image
+          src={stat.imageSrc}
+          alt={stat.headline}
+          width={1170}
+          height={700}
+          className="h-auto w-full"
+        />
+      </div>
+      <ul className="mt-4 space-y-2">
+        {stat.bullets.map((bullet) => (
+          <li key={bullet} className="flex items-start gap-2 text-sm text-boom-black/65">
+            <span aria-hidden="true">📈</span>
+            <span>{bullet}</span>
+          </li>
+        ))}
+      </ul>
+      <a href="/apply" className="btn-primary-inverted mt-6 self-start">
+        Talk to us
+      </a>
+    </div>
+  );
+}
 
 export default function Results() {
   return (
@@ -13,24 +42,22 @@ export default function Results() {
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {resultStats.map((stat) => (
-            <div
-              key={stat.headline}
-              className="flex flex-col rounded-2xl border border-boom-black/10 bg-white p-6 shadow-card"
-            >
-              <h3 className="font-display text-xl font-extrabold leading-snug">{stat.headline}</h3>
-              <ul className="mt-4 space-y-2">
-                {stat.bullets.map((bullet) => (
-                  <li key={bullet} className="flex items-start gap-2 text-sm text-boom-black/65">
-                    <span aria-hidden="true">📈</span>
-                    <span>{bullet}</span>
-                  </li>
-                ))}
-              </ul>
-              <a href="/apply" className="btn-primary-inverted mt-6 self-start">
-                Talk to us
-              </a>
-            </div>
+          {resultStatsPrimary.map((stat) => (
+            <ResultCard key={stat.headline} stat={stat} />
+          ))}
+        </div>
+
+        <div className="mx-auto mt-20 max-w-2xl text-center">
+          <h2 className="font-display text-3xl font-extrabold tracking-tight md:text-4xl">
+            {strategySection.title}
+          </h2>
+          <p className="mt-4 text-lg text-boom-black/65">{strategySection.body}</p>
+          <p className="mt-4 text-lg font-semibold italic text-boom-black/70">{strategySection.lead}</p>
+        </div>
+
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {resultStatsSecondary.map((stat) => (
+            <ResultCard key={stat.headline} stat={stat} />
           ))}
         </div>
       </div>

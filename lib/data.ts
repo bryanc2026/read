@@ -188,6 +188,7 @@ export const howItWorks: { title: string; subhead: string; items: HowItWorksItem
 export type ResultStat = {
   headline: string;
   bullets: string[];
+  imageSrc: string;
 };
 
 export const resultStatsSection = {
@@ -195,7 +196,7 @@ export const resultStatsSection = {
   subhead: "Real results from members in the Boom community.",
 };
 
-export const resultStats: ResultStat[] = [
+export const resultStatsPrimary: ResultStat[] = [
   {
     headline: "60% Increase Year on Year",
     bullets: [
@@ -203,6 +204,7 @@ export const resultStats: ResultStat[] = [
       "Reducing ad spend in key periods",
       "Mixing email marketing with ads",
     ],
+    imageSrc: "/images/results/homepage-60pct.png",
   },
   {
     headline: "Solid, Reliable Growth",
@@ -211,6 +213,7 @@ export const resultStats: ResultStat[] = [
       "Fixing Google Ads tracking",
       "Learning profitable promotions",
     ],
+    imageSrc: "/images/results/homepage-solid-growth.png",
   },
   {
     headline: "84% Year on Year Increase",
@@ -219,7 +222,17 @@ export const resultStats: ResultStat[] = [
       "Managing supplier costs",
       "Learning profitable promotions",
     ],
+    imageSrc: "/images/results/homepage-84pct.png",
   },
+];
+
+export const strategySection = {
+  title: "Get a Strategy Built for Your Ecommerce Business",
+  body: "There is always a way to unlock ecommerce growth. The trick is finding what that is. We use a system called Your Numbers which helps us identify the best opportunity, then how to make it happen with Meta, Google Ads, email marketing and your ecommerce platform.",
+  lead: "Finding the unlock for your business gets results like this...",
+};
+
+export const resultStatsSecondary: ResultStat[] = [
   {
     headline: "104% Year on Year Growth",
     bullets: [
@@ -227,6 +240,7 @@ export const resultStats: ResultStat[] = [
       "Timed product launches",
       "Taking Google Ads management in-house",
     ],
+    imageSrc: "/images/results/homepage-104pct.png",
   },
   {
     headline: "87% Increase in UK Sales",
@@ -235,6 +249,7 @@ export const resultStats: ResultStat[] = [
       "Timing promotions",
       "Managing ads in-house for better results",
     ],
+    imageSrc: "/images/results/homepage-87pct-uk.png",
   },
   {
     headline: "$800K in One Week",
@@ -243,6 +258,7 @@ export const resultStats: ResultStat[] = [
       "Advertising when costs were low",
       "Increasing and decreasing Meta spend at the right time",
     ],
+    imageSrc: "/images/results/homepage-800k.png",
   },
 ];
 
@@ -370,14 +386,14 @@ export const testimonialsList: Testimonial[] = [
     name: "Katy B",
     role: "Owner, Katy B Jewellery",
     quote:
-      "Working with Boom has been a game-changer for me. They've taught me the ins and outs of Meta and Google Ads in a way that actually makes sense. Iain is incredible at breaking things down step by step, he doesn't just do it for us, he teaches us along the way. Before starting Boom I had no idea how to set up any ad campaigns; now I am confident.",
+      "Working with Boom has been a game-changer for me. They've taught me the ins and outs of Meta and Google Ads in a way that actually makes sense. Iain is incredible at breaking things down step by step, he doesn't just do it for us, he teaches us along the way while we can share screens and he sees what we are doing. He is very patient with us as we get an understanding of how to create the ads. Before starting Boom I had no idea how to set up any ad campaigns, now I am confident.",
     logoSrc: "/images/logos/katy-b.png",
   },
   {
     name: "Josh Bulafkin",
     role: "The Plants Project",
     quote:
-      "Iain has been instrumental in helping us take back ownership of our online spend and the actions we take as a business. He's shown us which levers to pull to get the results we want. I'm learning so much more than I ever have before, and it's given me a whole new level of confidence and clarity in our strategy.",
+      "Iain has been instrumental in helping us take back ownership of our online spend and the actions we take as a business. He's shown us which levers to pull when it comes to digital advertising to get the desired results. Under his guidance, I'm learning so much more than I ever have before, and it's given me a whole new level of confidence and clarity in our strategy. He's always available for advice, super easy to work with, and genuinely cares about helping us succeed. I'd highly recommend him to anyone looking for support with ecommerce or online ads.",
     logoSrc: "/images/logos/plants-project.png",
   },
   {

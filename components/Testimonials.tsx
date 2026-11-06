@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { testimonialsList, testimonialsSection } from "@/lib/data";
 
 export default function Testimonials() {
@@ -18,9 +19,21 @@ export default function Testimonials() {
               className="mb-6 break-inside-avoid rounded-2xl border border-boom-black/10 bg-white p-6 shadow-card"
             >
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-boom-yellow font-display text-sm font-extrabold text-boom-black">
-                  {t.name.charAt(0)}
-                </span>
+                {t.logoSrc ? (
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center overflow-hidden rounded-full border border-boom-black/10 bg-white">
+                    <Image
+                      src={t.logoSrc}
+                      alt={t.role}
+                      width={64}
+                      height={64}
+                      className="h-full w-full object-contain p-1.5"
+                    />
+                  </span>
+                ) : (
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-boom-yellow font-display text-sm font-extrabold text-boom-black">
+                    {t.name.charAt(0)}
+                  </span>
+                )}
                 <div>
                   <p className="text-sm font-semibold">{t.name}</p>
                   <p className="text-xs text-boom-black/50">{t.role}</p>

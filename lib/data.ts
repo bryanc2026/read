@@ -297,6 +297,7 @@ export type Testimonial = {
   name: string;
   role: string;
   quote: string;
+  logoSrc?: string;
 };
 
 export const testimonialsSection = {
@@ -310,24 +311,28 @@ export const testimonialsList: Testimonial[] = [
     role: "Alton",
     quote:
       "Boom has taught me the secret of ecommerce. There is no secret, it's just a set of numbers that you manage. The trick was knowing which numbers and how to manage them.",
+    logoSrc: "/images/logos/alton.png",
   },
   {
     name: "Prue Bauer",
     role: "Founder, AirGarden",
     quote:
       "We are actually starting to get meaningful results consistently, without completely blowing up our precious cash flow.",
+    logoSrc: "/images/logos/airgarden.webp",
   },
   {
     name: "Katy B",
     role: "Owner, Katy B Jewellery",
     quote:
       "Working with Boom has been a game-changer for me. They've taught me the ins and outs of Meta and Google Ads in a way that actually makes sense. Iain is incredible at breaking things down step by step, he doesn't just do it for us, he teaches us along the way. Before starting Boom I had no idea how to set up any ad campaigns; now I am confident.",
+    logoSrc: "/images/logos/katy-b.png",
   },
   {
     name: "Josh Bulafkin",
     role: "The Plants Project",
     quote:
       "Iain has been instrumental in helping us take back ownership of our online spend and the actions we take as a business. He's shown us which levers to pull to get the results we want. I'm learning so much more than I ever have before, and it's given me a whole new level of confidence and clarity in our strategy.",
+    logoSrc: "/images/logos/plants-project.png",
   },
   {
     name: "Jordan Bruno",
@@ -340,12 +345,14 @@ export const testimonialsList: Testimonial[] = [
     role: "Quiksilver",
     quote:
       "Iain is really professional, proactive and committed with a great entrepreneurial mindset. High level and up to date digital marketing skills.",
+    logoSrc: "/images/logos/quiksilver.png",
   },
   {
     name: "Molly & Emma",
     role: "Jam the Label",
     quote:
       "Iain and Bryan from Boom have been enormously helpful for us at JAM. They always have time, no question is a silly question and they explain things in a way that's easy for those of us who are complete novices to understand. We now feel much more empowered to handle the ecommerce side of our business, including our paid ads, ourselves. Thank you so much!",
+    logoSrc: "/images/logos/jam.jpg",
   },
 ];
 

@@ -8,7 +8,7 @@ export default function CTASection() {
           Ready to Unlock Your Ecommerce Business's Potential?
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-boom-black/70 md:text-lg">
-          Spots are capped at 20 brands. Talk to us to see if there's a fit — we'll tell you straight if we're not.
+          Spots are capped at 20 brands. Talk to us to see if there's a fit. We'll tell you straight if we're not.
         </p>
         <div className="mt-8 flex justify-center">
           <Link

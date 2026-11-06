@@ -82,18 +82,18 @@ export const differentiators = [
   },
   {
     title: "Built on Your Numbers",
-    body: "Every plan starts with our Your Numbers system — the fastest way to find the single biggest unlock in your business.",
+    body: "Every plan starts with our Your Numbers system, the fastest way to find the single biggest unlock in your business.",
   },
   {
     title: "Coaches who've run the machine",
-    body: "Not theorists. Our coaches have run 8-figure ecommerce operations and agencies — not just advised them from the sidelines.",
+    body: "Not theorists. Our coaches have run 8-figure ecommerce operations and agencies, not just advised them from the sidelines.",
   },
 ];
 
 export const workedWith = {
   title: "Who We've Worked With",
   subhead:
-    "Over the years, Iain & Bryan have worked with all types of ecommerce and retail businesses — from ASX-listed to influencer-led brands.",
+    "Over the years, Iain & Bryan have worked with all types of ecommerce and retail businesses, from ASX-listed to influencer-led brands.",
   logos: ["Billabong", "Quiksilver", "Sheet Society", "Supercheap Auto", "al.ive Body", "BCF"],
   logoImages: {
     Billabong: "/images/logos/billabong.png",
@@ -121,12 +121,12 @@ export const howItWorks: { title: string; subhead: string; items: HowItWorksItem
     {
       icon: "calendar",
       title: "One-to-One Coaching",
-      body: "Book Iain or Bryan in any time with a direct link to our calendar. No junior account managers — just coaches who've run all types of brands and know what they're doing.",
+      body: "Book Iain or Bryan in any time with a direct link to our calendar. No junior account managers, just coaches who've run all types of brands and know what they're doing.",
     },
     {
       icon: "boom",
       title: "The Boom Meta Method",
-      body: "Our unique approach to Meta, built on insights straight from Meta and real ad accounts — updated monthly.",
+      body: "Our unique approach to Meta, built on insights straight from Meta and real ad accounts, updated monthly.",
       bullets: [
         "Exact steps for profitable growth",
         "Only available to 20 ecommerce brands",
@@ -140,7 +140,7 @@ export const howItWorks: { title: string; subhead: string; items: HowItWorksItem
     {
       icon: "target",
       title: "Your Numbers",
-      body: "A clear, simple set of numbers that are easy to track and tell you exactly what to do when they move. No fluff — just the numbers that matter to your business and what to do as they change.",
+      body: "A clear, simple set of numbers that are easy to track and tell you exactly what to do when they move. No fluff, just the numbers that matter to your business and what to do as they change.",
     },
     {
       icon: "google",
@@ -165,7 +165,7 @@ export const howItWorks: { title: string; subhead: string; items: HowItWorksItem
     {
       icon: "chat",
       title: "Group Sessions",
-      body: "We meet every week to share findings and strategies and solve real challenges — how much to spend on Meta today, why some products aren't selling. Learning alongside other founders doing the same work means no competing brands, so you can share with confidence instead of battling it out alone.",
+      body: "We meet every week to share findings and strategies and solve real challenges, how much to spend on Meta today, why some products aren't selling. Learning alongside other founders doing the same work means no competing brands, so you can share with confidence instead of battling it out alone.",
     },
     {
       icon: "notes",
@@ -180,7 +180,7 @@ export const howItWorks: { title: string; subhead: string; items: HowItWorksItem
     {
       icon: "skills",
       title: "Learn Hands-On Marketing Skills",
-      body: "The best marketers are the ones who understand the brand — normally that's you or your team, not an outside agency. Learn how to run Google, Meta and email marketing yourself.",
+      body: "The best marketers are the ones who understand the brand, normally that's you or your team, not an outside agency. Learn how to run Google, Meta and email marketing yourself.",
     },
   ],
 };
@@ -217,15 +217,15 @@ export const whatMakesDifferent = {
     },
     {
       title: "Boutique, not big",
-      body: "Other coaching groups and communities get big — and the quality of the work gets watered down. We believe a community works well at a certain size, so you get real attention and help, not just another video to watch or another service to be upsold.",
+      body: "Other coaching groups and communities get big, and the quality of the work gets watered down. We believe a community works well at a certain size, so you get real attention and help, not just another video to watch or another service to be upsold.",
     },
     {
       title: "You work with the founders, Iain & Bryan",
-      body: "Work brand-side and you often get handed to a junior account manager — well-meaning, but someone who's never actually run an ecommerce business. We've owned ecommerce businesses, run digital agencies, and been hands-on in client accounts. It's just the two of us, helping you and your business.",
+      body: "Work brand-side and you often get handed to a junior account manager, well-meaning, but someone who's never actually run an ecommerce business. We've owned ecommerce businesses, run digital agencies, and been hands-on in client accounts. It's just the two of us, helping you and your business.",
     },
     {
       title: "No lock-in contracts",
-      body: "Most members stay for years — but our agreement is month to month. Be wary of coaching communities that force you to sign up for 12 months before you know if it's a fit.",
+      body: "Most members stay for years, but our agreement is month to month. Be wary of coaching communities that force you to sign up for 12 months before you know if it's a fit.",
     },
   ],
   cta: "Start Connecting with Like-Minded Ecommerce Businesses",
@@ -275,8 +275,8 @@ export const coaches: Coach[] = [
     photoSrc: "/images/coach-bryan.png",
     bio: [
       "I'm an Australian-based ecommerce consultant and trainer who has worked with the likes of Modibodi, The Block Shop, Tigerlily, Esther & Co, Al.ive Body, Oz Hair & Beauty, Camilla & Marc, Stussy and Rusty, alongside a range of owner-run Shopify brands.",
-      "With 8+ years of Shopify Plus experience, I focus on ecommerce development, finance and strategy — taking a holistic approach to conversion rate optimisation across acquisition, conversion, retention, A/B testing and continuous improvement.",
-      "My process is built to empower you, the merchant, to run this yourself over time — with us in the background to support and help break down the barriers.",
+      "With 8+ years of Shopify Plus experience, I focus on ecommerce development, finance and strategy, taking a holistic approach to conversion rate optimisation across acquisition, conversion, retention, A/B testing and continuous improvement.",
+      "My process is built to empower you, the merchant, to run this yourself over time, with us in the background to support and help break down the barriers.",
     ],
     quote: {
       text: "Bryan, our fractional CMO/CFO/ecommerce consultant, has been instrumental in transforming our online store. By emphasising key metrics like CAC, AOV and shipping, he turned our profit-loss situation into a profitable one.",
@@ -315,13 +315,13 @@ export const testimonialsList: Testimonial[] = [
     name: "Prue Bauer",
     role: "Founder, AirGarden",
     quote:
-      "We are actually starting to get meaningful results consistently — without completely blowing up our precious cash flow.",
+      "We are actually starting to get meaningful results consistently, without completely blowing up our precious cash flow.",
   },
   {
     name: "Katy B",
     role: "Owner, Katy B Jewellery",
     quote:
-      "Working with Boom has been a game-changer for me. They've taught me the ins and outs of Meta and Google Ads in a way that actually makes sense. Iain is incredible at breaking things down step by step — he doesn't just do it for us, he teaches us along the way. Before starting Boom I had no idea how to set up any ad campaigns; now I am confident.",
+      "Working with Boom has been a game-changer for me. They've taught me the ins and outs of Meta and Google Ads in a way that actually makes sense. Iain is incredible at breaking things down step by step, he doesn't just do it for us, he teaches us along the way. Before starting Boom I had no idea how to set up any ad campaigns; now I am confident.",
   },
   {
     name: "Josh Bulafkin",
@@ -333,7 +333,7 @@ export const testimonialsList: Testimonial[] = [
     name: "Jordan Bruno",
     role: "Roogenics",
     quote:
-      "Boom Ecommerce Coaching has been a turning point for us. With Iain and Bryan's guidance, we optimised ad spend, learnt to measure the metrics that matter, and built a clear strategy for growth. The results speak for themselves — stronger profits, better decisions, and real confidence in our direction. I wish we had done this a year ago!",
+      "Boom Ecommerce Coaching has been a turning point for us. With Iain and Bryan's guidance, we optimised ad spend, learnt to measure the metrics that matter, and built a clear strategy for growth. The results speak for themselves, stronger profits, better decisions, and real confidence in our direction. I wish we had done this a year ago!",
   },
   {
     name: "Yon Carricaburu",
@@ -355,7 +355,7 @@ export const qualification = {
   cta: "Talk to Us",
   policy: {
     title: "Don't Be Offended If We Don't Take You On",
-    body: "If you compete directly with one of our members, we won't take you on — that's the policy. Sometimes we're just not the right match, and we'd rather say so upfront than take your money and hope for the best.",
+    body: "If you compete directly with one of our members, we won't take you on. That's the policy. Sometimes we're just not the right match, and we'd rather say so upfront than take your money and hope for the best.",
     cta: "Find Out If We Can Work Together",
   },
 };
@@ -380,7 +380,7 @@ export const faqs = [
   },
   {
     q: "How is this different from hiring an agency?",
-    a: "Agencies run your channels for you and keep the knowledge. We coach you and your team to run them yourselves — using the Your Numbers system — so the skill and the upside stay in-house.",
+    a: "Agencies run your channels for you and keep the knowledge. We coach you and your team to run them yourselves, using the Your Numbers system, so the skill and the upside stay in-house.",
   },
   {
     q: "Why cap it at 20 brands?",
@@ -392,11 +392,11 @@ export const faqs = [
   },
   {
     q: "What channels do you cover?",
-    a: "Meta, Google Ads, email/SMS (Klaviyo) and your ecommerce platform — plus the finance and operations numbers that connect them.",
+    a: "Meta, Google Ads, email/SMS (Klaviyo) and your ecommerce platform, plus the finance and operations numbers that connect them.",
   },
   {
     q: "Is there a lock-in contract?",
-    a: "No. Most members stay for years, but our agreement is month to month — we'd rather earn it every month than lock you in.",
+    a: "No. Most members stay for years, but our agreement is month to month, we'd rather earn it every month than lock you in.",
   },
 ];
 
@@ -424,11 +424,11 @@ export const aboutPage = {
       },
       {
         title: "Profit Focused",
-        body: "There's so much more to ecommerce than spending more on Facebook Ads. Using our tried-and-tested framework, we coach brands to grow profitably by looking at the entire picture — margins, stock levels, all marketing channels, team and the overall market.",
+        body: "There's so much more to ecommerce than spending more on Facebook Ads. Using our tried-and-tested framework, we coach brands to grow profitably by looking at the entire picture, margins, stock levels, all marketing channels, team and the overall market.",
       },
       {
         title: "Action Over Talk",
-        body: "You get results by doing things. We're focused on giving you and your team everything you need to execute — coaching, insights and technical click-by-click training.",
+        body: "You get results by doing things. We're focused on giving you and your team everything you need to execute, coaching, insights and technical click-by-click training.",
       },
     ],
   },
@@ -465,7 +465,7 @@ export const metaMethodPage = {
       "Optimise based on cash in and out, not mythical ROAS",
       "Roll out campaigns without rollercoaster results",
     ],
-    footer: "This transformation isn't just possible — it's within your reach with the right guidance.",
+    footer: "This transformation isn't just possible. It's within your reach with the right guidance.",
   },
   coach: {
     name: "Iain Calvert",
@@ -585,7 +585,7 @@ export const metaMethodPage = {
       {
         icon: "calendar" as const,
         title: "1:1 Coaching Sessions",
-        body: "Book in a session any time you want to solve anything in ecommerce — from inventory management to hiring and everything in between.",
+        body: "Book in a session any time you want to solve anything in ecommerce, from inventory management to hiring and everything in between.",
       },
       {
         icon: "notes" as const,
@@ -605,7 +605,7 @@ export const metaMethodPage = {
       {
         icon: "google" as const,
         title: "Google Ads Training",
-        body: "Ecommerce is so much more than just Meta ads. Learn how Google and Meta work together — a great Google Ads strategy will improve your Meta results.",
+        body: "Ecommerce is so much more than just Meta ads. Learn how Google and Meta work together, a great Google Ads strategy will improve your Meta results.",
       },
       {
         icon: "playbook" as const,
@@ -621,7 +621,7 @@ export const metaMethodPage = {
   },
   testimonials: {
     title: "What Boom Members Say",
-    subhead: "Don't just take our word for it — here's what the community thinks of Boom.",
+    subhead: "Don't just take our word for it. Here's what the community thinks of Boom.",
     names: ["Prue Bauer", "Jordan Bruno", "Sam Schumann"],
   },
   noLockIn: {
@@ -660,7 +660,7 @@ export const switchPage = {
     eyebrow: "For Founders Who've Outgrown Generic Coaching",
     title: "20 Brands. Not 4,000.",
     subhead:
-      "Coaching where the coach already knows what you sell — and will tell you when not to spend more, not just when to.",
+      "Coaching where the coach already knows what you sell, and will tell you when not to spend more, not just when to.",
     cta: "See If You're a Fit",
   },
   intro: {
@@ -673,7 +673,7 @@ export const switchPage = {
       problemBody:
         "Packed group calls where your question never gets answered. You joined for guidance, but you're just another name on a roster.",
       answer: "Capped at 20 Brands",
-      answerBody: "We know every member by name — and so does every coach in the room.",
+      answerBody: "We know every member by name, and so does every coach in the room.",
     },
     {
       problem: "Advice You Could Google",
@@ -681,7 +681,7 @@ export const switchPage = {
         "Coaches ask what you sell on the call, then hand you advice you could've found in a blog post.",
       answer: "We've Already Seen Your Numbers",
       answerBody:
-        "You work with Iain or Bryan directly, the same person every time — not a rotating roster of junior account managers.",
+        "You work with Iain or Bryan directly, the same person every time, not a rotating roster of junior account managers.",
     },
     {
       problem: "Spend More, Never Slow Down",
@@ -689,18 +689,18 @@ export const switchPage = {
         "A playbook that only points one direction: spend more. No one asks about your margin, your stock costs, or your cash flow.",
       answer: "Your Numbers Comes First",
       answerBody:
-        "Gross margin after COGS, shipping and fees — tracked properly. We'll tell you when not to spend more.",
+        "Gross margin after COGS, shipping and fees, tracked properly. We'll tell you when not to spend more.",
     },
     {
       problem: "Locked In For a Year",
       problemBody: "A short trial that quietly rolls into a 12-month contract with an auto-renewal clause.",
       answer: "Month to Month, Always",
-      answerBody: "No lock-in contracts. If you want to leave, it's 30 days' notice — no fine print.",
+      answerBody: "No lock-in contracts. If you want to leave, it's 30 days' notice, no fine print.",
     },
     {
       problem: "Feels Like a Club, Not Coaching",
       problemBody:
-        "More group hype and networking than actual strategy — a community that feels more like a fan club than a coaching program.",
+        "More group hype and networking than actual strategy, a community that feels more like a fan club than a coaching program.",
       answer: "Real Strategy, Not Hype",
       answerBody:
         "Small enough to be genuinely personal, run by operators who've actually run 8-figure ecommerce brands.",

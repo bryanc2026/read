@@ -31,6 +31,7 @@ export default function Home() {
         logos={workedWith.logos}
         logoImages={workedWith.logoImages}
         theme="dark"
+        badged
       />
       <HowItWorks />
       <Results />

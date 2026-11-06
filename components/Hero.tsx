@@ -6,10 +6,10 @@ export default function Hero() {
       <div className="container-content grid items-center gap-12 pb-16 md:grid-cols-2 md:gap-10 md:pb-24">
         <div>
           <h1 className="font-display text-[2.6rem] font-extrabold leading-[1.04] tracking-tight md:text-6xl">
-            Coaching to run your ecommerce business and marketing profitably
+            Reaching Your Ecommerce Business's Full Potential
           </h1>
           <p className="mt-5 max-w-md text-lg text-boom-black/70">
-            A capped-capacity coaching community for Shopify founders, owners and marketers who are done guessing — and ready to scale profitably with a coach in their corner.
+            A capped-capacity coaching community for Shopify founders, owners and marketers who are done guessing and ready to scale profitably with a coach in their corner.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a href="/apply" className="btn-primary">

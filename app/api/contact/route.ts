@@ -42,13 +42,20 @@ export async function POST(request: Request) {
   const html = rows.map(([field, value]) => `<p><strong>${field}:</strong> ${value}</p>`).join("");
 
   try {
-    await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: "Boom Website <onboarding@resend.dev>",
       to: RECIPIENTS,
       replyTo: email,
       subject: `New ${label} form submission — ${fullName}`,
       html,
     });
+
+    if (error) {
+      console.error("Resend rejected the form email:", error);
+      return NextResponse.json({ error: "Failed to send message. Please try again later." }, { status: 500 });
+    }
+
+    console.log("Form email accepted by Resend:", data?.id);
     return NextResponse.json({ ok: true });
   } catch (error) {
     console.error("Failed to send form email:", error);

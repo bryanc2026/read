@@ -23,7 +23,7 @@ export default function FreeToolsPage() {
             Free Ecommerce Calculators
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-boom-black/65">
-            A couple of quick tools we built to help ecommerce brands check their numbers — no sign-up
+            A couple of quick tools we built to help ecommerce brands check their numbers. No sign-up
             required.
           </p>
         </div>

@@ -6,9 +6,11 @@ type LogoWallProps = {
   logos: string[];
   logoImages?: Record<string, string>;
   theme?: "dark" | "light";
+  /** Wrap each logo image in a neutral card. Use for logos with their own solid-color background tile, so that color doesn't clash directly with the section background. */
+  badged?: boolean;
 };
 
-export default function LogoWall({ title, subhead, logos, logoImages, theme = "dark" }: LogoWallProps) {
+export default function LogoWall({ title, subhead, logos, logoImages, theme = "dark", badged = false }: LogoWallProps) {
   const isDark = theme === "dark";
   return (
     <section
@@ -28,7 +30,14 @@ export default function LogoWall({ title, subhead, logos, logoImages, theme = "d
         <div className="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-8">
           {logos.map((logo) =>
             logoImages?.[logo] ? (
-              <div key={logo} className="flex h-20 w-28 items-center justify-center md:h-28 md:w-36">
+              <div
+                key={logo}
+                className={
+                  badged
+                    ? "flex h-20 w-28 items-center justify-center overflow-hidden rounded-xl bg-white p-3 shadow-card md:h-28 md:w-36"
+                    : "flex h-20 w-28 items-center justify-center md:h-28 md:w-36"
+                }
+              >
                 <Image
                   src={logoImages[logo]}
                   alt={logo}

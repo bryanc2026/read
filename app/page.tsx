@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Qualification from "@/components/Qualification";
 import PressAndPartners from "@/components/PressAndPartners";
 import MemberSuccess from "@/components/MemberSuccess";
+import OfficialPartners from "@/components/OfficialPartners";
 import FAQ from "@/components/FAQ";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -32,18 +33,15 @@ export default function Home() {
       <Header />
       <Hero />
       <Differentiators />
+      <Results />
+      <Coaches />
       <LogoWall
         title={workedWith.title}
         subhead={workedWith.subhead}
         logos={workedWith.logos}
         logoImages={workedWith.logoImages}
         theme="dark"
-        badged
       />
-      <HowItWorks />
-      <Results />
-      <WhatMakesDifferent />
-      <Coaches />
       <Testimonials
         id="reviews"
         title={testimonialsSectionPrimary.title}
@@ -53,6 +51,9 @@ export default function Home() {
       <Qualification />
       <PressAndPartners />
       <MemberSuccess />
+      <OfficialPartners />
+      <HowItWorks />
+      <WhatMakesDifferent />
       <Testimonials
         title={testimonialsSectionSecondary.title}
         subhead={testimonialsSectionSecondary.subhead}

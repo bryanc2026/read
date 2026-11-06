@@ -6,11 +6,11 @@ type LogoWallProps = {
   logos: string[];
   logoImages?: Record<string, string>;
   theme?: "dark" | "light";
-  /** Wrap each logo image in a neutral card. Use for logos with their own solid-color background tile, so that color doesn't clash directly with the section background. */
-  badged?: boolean;
+  /** Force every logo to a flat white silhouette via CSS filter. Only use with logos on a transparent background — on an opaque tile it flattens the whole tile to a blank white square. */
+  mono?: boolean;
 };
 
-export default function LogoWall({ title, subhead, logos, logoImages, theme = "dark", badged = false }: LogoWallProps) {
+export default function LogoWall({ title, subhead, logos, logoImages, theme = "dark", mono = false }: LogoWallProps) {
   const isDark = theme === "dark";
   return (
     <section
@@ -32,18 +32,14 @@ export default function LogoWall({ title, subhead, logos, logoImages, theme = "d
             logoImages?.[logo] ? (
               <div
                 key={logo}
-                className={
-                  badged
-                    ? "flex h-20 w-28 items-center justify-center overflow-hidden rounded-xl bg-white p-3 shadow-card md:h-28 md:w-36 lg:h-24 lg:w-32"
-                    : "flex h-20 w-28 items-center justify-center md:h-28 md:w-36 lg:h-24 lg:w-32"
-                }
+                className="flex h-20 w-28 items-center justify-center md:h-28 md:w-36 lg:h-24 lg:w-32"
               >
                 <Image
                   src={logoImages[logo]}
                   alt={logo}
                   width={300}
                   height={300}
-                  className="max-h-full max-w-full object-contain"
+                  className={`max-h-full max-w-full object-contain ${mono ? "brightness-0 invert" : ""}`}
                 />
               </div>
             ) : (

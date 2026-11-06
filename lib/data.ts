@@ -440,16 +440,28 @@ export const qualification = {
 export const featuredBy = {
   title: "As Featured By",
   subhead: "We've presented for and trained clients of",
-  logos: ["Shopify", "Facebook", "Add To Cart", "SmartCompany", "Klaviyo", "JAM", "Shark Tank"],
+  logos: ["Shopify", "Facebook", "Add To Cart", "SmartCompany", "Klaviyo"],
   logoImages: {
     Shopify: "/images/logos/shopify.png",
     Facebook: "/images/logos/facebook.png",
     "Add To Cart": "/images/logos/add-to-cart.png",
     SmartCompany: "/images/logos/smartcompany.png",
     Klaviyo: "/images/logos/klaviyo.png",
-    JAM: "/images/logos/jam.jpg",
-    "Shark Tank": "/images/logos/shark-tank.png",
   } as Record<string, string>,
+};
+
+export const officialPartners = {
+  title: "Official Partners Of",
+  logos: ["Meta Business Partners", "Klaviyo", "Shopify"],
+  logoImages: {
+    "Meta Business Partners": "/images/logos/meta-business-partners.jpg",
+    Klaviyo: "/images/logos/klaviyo.png",
+    Shopify: "/images/logos/shopify.png",
+  } as Record<string, string>,
+};
+
+export const strategyDivider = {
+  title: "All Boom Members Manage A Simple Set of Numbers to Grow",
 };
 
 export const memberSuccess = {

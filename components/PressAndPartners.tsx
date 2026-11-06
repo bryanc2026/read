@@ -9,6 +9,7 @@ export default function PressAndPartners() {
       logos={featuredBy.logos}
       logoImages={featuredBy.logoImages}
       theme="dark"
+      mono
     />
   );
 }

@@ -21,6 +21,8 @@ import {
   testimonialsSectionSecondary,
   testimonialsListPrimary,
   testimonialsListSecondary,
+  qualification,
+  qualificationPolicy,
 } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -35,6 +37,7 @@ export default function Home() {
       <Differentiators />
       <Results />
       <Coaches />
+      <Qualification title={qualification.title} body={qualification.body} cta={qualification.cta} theme="light" />
       <LogoWall
         title={workedWith.title}
         subhead={workedWith.subhead}
@@ -48,7 +51,12 @@ export default function Home() {
         subhead={testimonialsSectionPrimary.subhead}
         testimonials={testimonialsListPrimary}
       />
-      <Qualification />
+      <Qualification
+        title={qualificationPolicy.title}
+        body={qualificationPolicy.body}
+        cta={qualificationPolicy.cta}
+        theme="light"
+      />
       <PressAndPartners />
       <MemberSuccess />
       <OfficialPartners />
@@ -59,6 +67,7 @@ export default function Home() {
         subhead={testimonialsSectionSecondary.subhead}
         testimonials={testimonialsListSecondary}
       />
+      <Qualification title={qualification.title} body={qualification.body} cta={qualification.cta} theme="dark" />
       <FAQ />
       <CTASection />
       <Footer />

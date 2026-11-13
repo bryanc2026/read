@@ -438,11 +438,12 @@ export const qualification = {
   title: "We Only Take On Businesses We Can Help",
   body: "Because we limit the number of businesses we work with to 20, we want to make sure we can actually get you to your goal. We'll tell you upfront if we can't help.",
   cta: "Talk to Us",
-  policy: {
-    title: "Don't Be Offended If We Don't Take You On",
-    body: "If you compete directly with one of our members, we won't take you on. That's the policy. Sometimes we're just not the right match, and we'd rather say so upfront than take your money and hope for the best.",
-    cta: "Find Out If We Can Work Together",
-  },
+};
+
+export const qualificationPolicy = {
+  title: "Don't Be Offended If We Don't Take You On",
+  body: "If you compete directly with one of our members, we won't take you on. That's the policy. Sometimes we're just not the right match, and we'd rather say so upfront than take your money and hope for the best.",
+  cta: "Find Out If We Can Work Together",
 };
 
 export const featuredBy = {

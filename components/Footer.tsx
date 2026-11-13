@@ -2,7 +2,7 @@ import { footerLinks } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer className="bg-boom-black py-14 text-white/60">
+    <footer className="border-t border-white/10 bg-boom-black py-14 text-white/60">
       <div className="container-content flex flex-col items-center gap-8 md:flex-row md:items-start md:justify-between">
         <div className="text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start">

@@ -9,6 +9,7 @@ export default function OfficialPartners() {
       logoImages={officialPartners.logoImages}
       theme="dark"
       mono
+      cardLogos={["Meta Business Partners"]}
     />
   );
 }

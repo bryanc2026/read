@@ -8,9 +8,19 @@ type LogoWallProps = {
   theme?: "dark" | "light";
   /** Force every logo to a flat white silhouette via CSS filter. Only use with logos on a transparent background — on an opaque tile it flattens the whole tile to a blank white square. */
   mono?: boolean;
+  /** Logos (by name) that are opaque — excluded from the mono filter and given a white card instead so they don't flatten to a blank box. */
+  cardLogos?: string[];
 };
 
-export default function LogoWall({ title, subhead, logos, logoImages, theme = "dark", mono = false }: LogoWallProps) {
+export default function LogoWall({
+  title,
+  subhead,
+  logos,
+  logoImages,
+  theme = "dark",
+  mono = false,
+  cardLogos = [],
+}: LogoWallProps) {
   const isDark = theme === "dark";
   return (
     <section
@@ -30,18 +40,33 @@ export default function LogoWall({ title, subhead, logos, logoImages, theme = "d
         <div className="mt-12 flex flex-wrap items-center justify-center gap-x-5 gap-y-8">
           {logos.map((logo) =>
             logoImages?.[logo] ? (
-              <div
-                key={logo}
-                className="flex h-20 w-28 items-center justify-center md:h-28 md:w-36 lg:h-24 lg:w-32"
-              >
-                <Image
-                  src={logoImages[logo]}
-                  alt={logo}
-                  width={300}
-                  height={300}
-                  className={`max-h-full max-w-full object-contain ${mono ? "brightness-0 invert" : ""}`}
-                />
-              </div>
+              cardLogos.includes(logo) ? (
+                <div
+                  key={logo}
+                  className="flex h-20 w-28 items-center justify-center overflow-hidden rounded-xl bg-white p-3 shadow-card md:h-28 md:w-36 lg:h-24 lg:w-32"
+                >
+                  <Image
+                    src={logoImages[logo]}
+                    alt={logo}
+                    width={300}
+                    height={300}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              ) : (
+                <div
+                  key={logo}
+                  className="flex h-20 w-28 items-center justify-center md:h-28 md:w-36 lg:h-24 lg:w-32"
+                >
+                  <Image
+                    src={logoImages[logo]}
+                    alt={logo}
+                    width={300}
+                    height={300}
+                    className={`max-h-full max-w-full object-contain ${mono ? "brightness-0 invert" : ""}`}
+                  />
+                </div>
+              )
             ) : (
               <span
                 key={logo}

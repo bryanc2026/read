@@ -300,7 +300,7 @@ export type Coach = {
   photo: string;
   photoSrc?: string;
   bio: string[];
-  quote: { text: string; author: string; company?: string };
+  quote: { text: string; author?: string; company?: string; companyLogo?: string };
   badges: string[];
 };
 
@@ -320,6 +320,7 @@ export const coaches: Coach[] = [
       text: "He's not your ‘throw money at Instagram’ kinda guy. He's deliberate in thinking long-term to create real impact for business owners.",
       author: "Rhys Furner",
       company: "Shopify",
+      companyLogo: "/images/logos/shopify-black.png",
     },
     badges: [
       "Worked for ASX-listed retailer",
@@ -342,7 +343,6 @@ export const coaches: Coach[] = [
     ],
     quote: {
       text: "Bryan, our fractional CMO/CFO/ecommerce consultant, has been instrumental in transforming our online store. By emphasising key metrics like CAC, AOV and shipping, he turned our profit-loss situation into a profitable one.",
-      author: "Boom Member",
     },
     badges: [
       "Worked for one of the largest ecomm agencies in APAC for 5 years",
@@ -597,6 +597,7 @@ export const metaMethodPage = {
       text: "He's not your ‘throw money at Instagram’ kinda guy. He's deliberate in thinking long-term to create real impact for business owners.",
       author: "Rhys Furner",
       company: "Shopify",
+      companyLogo: "/images/logos/shopify-black.png",
     },
     badges: [
       "Worked for ASX-listed retailer",

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { metaMethodPage } from "@/lib/data";
 import PlaceholderImage from "../ui/PlaceholderImage";
 
@@ -21,12 +22,25 @@ export default function CoachProfile() {
             />
             <blockquote className="mt-5 border-l-2 border-boom-yellow pl-4 text-sm italic text-boom-black/70">
               &ldquo;{coach.quote.text}&rdquo;
-              <footer className="mt-2 not-italic">
-                <span className="block text-sm font-semibold text-boom-black">{coach.quote.author}</span>
-                {coach.quote.company && (
-                  <span className="text-xs font-medium text-boom-black/50">{coach.quote.company}</span>
-                )}
-              </footer>
+              {coach.quote.author && (
+                <footer className="mt-2 flex items-center gap-2 not-italic">
+                  <div>
+                    <span className="block text-sm font-semibold text-boom-black">{coach.quote.author}</span>
+                    {coach.quote.company && !coach.quote.companyLogo && (
+                      <span className="text-xs font-medium text-boom-black/50">{coach.quote.company}</span>
+                    )}
+                  </div>
+                  {coach.quote.companyLogo && (
+                    <Image
+                      src={coach.quote.companyLogo}
+                      alt={coach.quote.company ?? ""}
+                      width={80}
+                      height={24}
+                      className="h-4 w-auto object-contain"
+                    />
+                  )}
+                </footer>
+              )}
             </blockquote>
           </div>
 

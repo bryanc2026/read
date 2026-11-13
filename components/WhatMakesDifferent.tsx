@@ -23,7 +23,10 @@ export default function WhatMakesDifferent() {
         <div className="mx-auto mt-14 grid max-w-4xl gap-6 sm:grid-cols-2">
           {whatMakesDifferent.cards.map((card) => (
             <div key={card.title} className="rounded-2xl border border-boom-black/10 bg-white p-7 shadow-card">
-              <h3 className="font-display text-lg font-bold leading-snug">{card.title}</h3>
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-boom-yellow font-display text-[10px] font-extrabold text-boom-black">
+                BOOM
+              </span>
+              <h3 className="mt-4 font-display text-lg font-bold leading-snug">{card.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-boom-black/60">{card.body}</p>
             </div>
           ))}

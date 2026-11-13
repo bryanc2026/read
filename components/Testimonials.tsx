@@ -9,6 +9,15 @@ type Props = {
 };
 
 export default function Testimonials({ title, subhead, testimonials, id }: Props) {
+  // Cap the column count at how many cards there are, so a short list
+  // (e.g. 2 testimonials) never leaves an empty column at wider widths.
+  const columnsClassName =
+    testimonials.length >= 3
+      ? "columns-1 gap-6 sm:columns-2 lg:columns-3"
+      : testimonials.length === 2
+        ? "mx-auto max-w-3xl columns-1 gap-6 sm:columns-2"
+        : "mx-auto max-w-xl columns-1 gap-6";
+
   return (
     <section id={id} className="border-t border-boom-black/10 bg-boom-gray-50 pb-14 pt-8 md:pb-20 md:pt-12">
       <div className="container-content">
@@ -17,7 +26,7 @@ export default function Testimonials({ title, subhead, testimonials, id }: Props
           <p className="mt-4 text-lg text-boom-black/65">{subhead}</p>
         </div>
 
-        <div className="mt-14 columns-1 gap-6 sm:columns-2 lg:columns-3">
+        <div className={`mt-14 ${columnsClassName}`}>
           {testimonials.map((t) => (
             <div
               key={t.name}

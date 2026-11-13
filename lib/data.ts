@@ -309,7 +309,7 @@ export const coaches: Coach[] = [
     name: "Iain Calvert",
     role: "Co-Founder & Coach",
     photo: "/images/coach-iain.jpg",
-    photoSrc: "/images/coach-iain.png",
+    photoSrc: "/images/coach-iain-stage.jpg",
     bio: [
       "I help Aussie ecommerce brands scale faster, spend smarter and sell more online.",
       "With 20+ years in ecommerce, I've worked with global retailers like Billabong, Quiksilver, Supercheap Auto and Terry White Chemmart, as well as hundreds of growing brands across Australia and the UK.",
@@ -360,6 +360,7 @@ export type Testimonial = {
   role: string;
   quote: string;
   logoSrc?: string;
+  photoSrc?: string;
 };
 
 export const testimonialsSectionPrimary = {
@@ -379,6 +380,7 @@ export const testimonialsListPrimary: Testimonial[] = [
     quote:
       "Boom has taught me the secret of ecommerce. There is no secret, it's just a set of numbers that you manage. The trick was knowing which numbers and how to manage them.",
     logoSrc: "/images/logos/alton.png",
+    photoSrc: "/images/testimonials/sam.jpg",
   },
   {
     name: "Prue Bauer",
@@ -386,6 +388,7 @@ export const testimonialsListPrimary: Testimonial[] = [
     quote:
       "We are actually starting to get meaningful results consistently, without completely blowing up our precious cash flow.",
     logoSrc: "/images/logos/airgarden.webp",
+    photoSrc: "/images/testimonials/prue.jpg",
   },
   {
     name: "Katy B",
@@ -393,6 +396,7 @@ export const testimonialsListPrimary: Testimonial[] = [
     quote:
       "Working with Boom has been a game-changer for me. They've taught me the ins and outs of Meta and Google Ads in a way that actually makes sense. Iain is incredible at breaking things down step by step, he doesn't just do it for us, he teaches us along the way while we can share screens and he sees what we are doing. He is very patient with us as we get an understanding of how to create the ads. Before starting Boom I had no idea how to set up any ad campaigns, now I am confident.",
     logoSrc: "/images/logos/katy-b.png",
+    photoSrc: "/images/testimonials/katyb.jpg",
   },
   {
     name: "Josh Bulafkin",
@@ -400,12 +404,14 @@ export const testimonialsListPrimary: Testimonial[] = [
     quote:
       "Iain has been instrumental in helping us take back ownership of our online spend and the actions we take as a business. He's shown us which levers to pull when it comes to digital advertising to get the desired results. Under his guidance, I'm learning so much more than I ever have before, and it's given me a whole new level of confidence and clarity in our strategy. He's always available for advice, super easy to work with, and genuinely cares about helping us succeed. I'd highly recommend him to anyone looking for support with ecommerce or online ads.",
     logoSrc: "/images/logos/plants-project.png",
+    photoSrc: "/images/testimonials/josh.jpg",
   },
   {
     name: "Jordan Bruno",
     role: "Roogenics",
     quote:
       "Boom Ecommerce Coaching has been a turning point for us. With Iain and Bryan's guidance, we optimised ad spend, learnt to measure the metrics that matter, and built a clear strategy for growth. The results speak for themselves, stronger profits, better decisions, and real confidence in our direction. I wish we had done this a year ago!",
+    photoSrc: "/images/testimonials/jordan.jpg",
   },
 ];
 
@@ -416,6 +422,7 @@ export const testimonialsListSecondary: Testimonial[] = [
     quote:
       "Iain is really professional, proactive and committed with a great entrepreneurial mindset. High level and up to date digital marketing skills.",
     logoSrc: "/images/logos/quiksilver.png",
+    photoSrc: "/images/testimonials/yon.jpg",
   },
   {
     name: "Molly & Emma",
@@ -423,6 +430,7 @@ export const testimonialsListSecondary: Testimonial[] = [
     quote:
       "Iain and Bryan from Boom have been enormously helpful for us at JAM. They always have time, no question is a silly question and they explain things in a way that's easy for those of us who are complete novices to understand. We now feel much more empowered to handle the ecommerce side of our business, including our paid ads, ourselves. Thank you so much!",
     logoSrc: "/images/logos/jam.jpg",
+    photoSrc: "/images/testimonials/emma.jpg",
   },
 ];
 

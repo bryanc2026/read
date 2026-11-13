@@ -24,7 +24,17 @@ export default function Testimonials({ title, subhead, testimonials, id }: Props
               className="mb-6 break-inside-avoid rounded-2xl border border-boom-black/10 bg-white p-6 shadow-card"
             >
               <div className="flex items-center gap-3">
-                {t.logoSrc ? (
+                {t.photoSrc ? (
+                  <span className="flex h-10 w-10 flex-shrink-0 overflow-hidden rounded-full border border-boom-black/10">
+                    <Image
+                      src={t.photoSrc}
+                      alt={t.name}
+                      width={80}
+                      height={80}
+                      className="h-full w-full object-cover"
+                    />
+                  </span>
+                ) : t.logoSrc ? (
                   <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center overflow-hidden rounded-full border border-boom-black/10 bg-white">
                     <Image
                       src={t.logoSrc}

@@ -94,7 +94,22 @@ export const workedWith = {
   title: "Who We've Worked With",
   subhead:
     "Over the years, Iain & Bryan have worked with all types of ecommerce and retail businesses, from ASX-listed to influencer-led brands.",
-  logos: ["Billabong", "Quiksilver", "Sheet Society", "Supercheap Auto", "al.ive Body", "BCF"],
+  logos: [
+    "Billabong",
+    "Quiksilver",
+    "Sheet Society",
+    "Supercheap Auto",
+    "al.ive Body",
+    "BCF",
+    "Orange Sherbet",
+    "Alton Goods",
+    "Roogenic",
+    "Poseidon Animal Health",
+    "Brolly Sheets",
+    "Hairgang",
+    "Millwood Shoes",
+    "Hey Doodle",
+  ],
   logoImages: {
     Billabong: "/images/logos/billabong.png",
     Quiksilver: "/images/logos/quiksilver.png",
@@ -102,6 +117,15 @@ export const workedWith = {
     "Supercheap Auto": "/images/logos/supercheap-auto.png",
     "al.ive Body": "/images/logos/alive-body.png",
     BCF: "/images/logos/bcf.png",
+    "Orange Sherbet": "/images/logos/orange-sherbet.png",
+    "Alton Goods": "/images/logos/alton.png",
+    "Poseidon Animal Health": "/images/logos/poseidon.webp",
+    "Brolly Sheets": "/images/logos/brolly-sheets.svg",
+    Hairgang: "/images/logos/hairgang.png",
+    "Millwood Shoes": "/images/logos/millwoods.jpg",
+    "Hey Doodle": "/images/logos/heydoodle.png",
+    // Roogenic's site blocks scripted access (Cloudflare bot protection) — falls
+    // back to a text wordmark until Bryan/Iain can supply the logo file directly.
   } as Record<string, string>,
 };
 

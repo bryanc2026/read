@@ -9,6 +9,7 @@ export default function OfficialPartners() {
       logoImages={officialPartners.logoImages}
       theme="dark"
       mono
+      tallLogos={["Shopify"]}
     />
   );
 }

@@ -10,6 +10,8 @@ type LogoWallProps = {
   rawLogos?: string[];
   /** "sm" (default) for flat wordmark logos. "lg" for square/badge-style logos (e.g. client logo tiles), which need real height to read clearly since they're mostly 1:1, not wide wordmarks. */
   size?: "sm" | "lg";
+  /** Logos (by name) that are a tall, stacked badge (icon + wordmark + caption) rather than a flat wordmark like the rest of this wall — same height as everyone else makes them render much narrower, so they get the "lg" height instead, even inside an otherwise "sm" wall. */
+  tallLogos?: string[];
 };
 
 export default function LogoWall({
@@ -21,9 +23,11 @@ export default function LogoWall({
   mono = false,
   rawLogos = [],
   size = "sm",
+  tallLogos = [],
 }: LogoWallProps) {
-  const logoClassName =
-    size === "lg" ? "h-20 w-auto max-w-[160px] object-contain md:h-24 md:max-w-[190px]" : "h-8 w-auto max-w-[140px] object-contain md:h-10 md:max-w-[170px]";
+  const smallClassName = "h-8 w-auto max-w-[140px] object-contain md:h-10 md:max-w-[170px]";
+  const largeClassName = "h-20 w-auto max-w-[160px] object-contain md:h-24 md:max-w-[190px]";
+  const logoClassName = size === "lg" ? largeClassName : smallClassName;
   const isDark = theme === "dark";
   return (
     <section
@@ -56,7 +60,9 @@ export default function LogoWall({
                 key={logo}
                 src={logoImages[logo]}
                 alt={logo}
-                className={`${logoClassName} ${mono && !rawLogos.includes(logo) ? "brightness-0 invert" : ""}`}
+                className={`${tallLogos.includes(logo) ? largeClassName : logoClassName} ${
+                  mono && !rawLogos.includes(logo) ? "brightness-0 invert" : ""
+                }`}
               />
             ) : (
               <span

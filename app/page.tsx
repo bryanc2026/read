@@ -41,11 +41,12 @@ export default function Home() {
       <LogoWall
         title={workedWith.title}
         subhead={workedWith.subhead}
-        logos={workedWith.logos}
+        logos={workedWith.originalLogos}
+        secondaryLogos={workedWith.newLogos}
         logoImages={workedWith.logoImages}
         theme="dark"
         size="lg"
-        tileLogos={["Orange Sherbet", "Alton Goods", "Roogenic", "Brolly Sheets", "Hairgang"]}
+        tileLogos={workedWith.newLogos}
       />
       <Testimonials
         id="reviews"

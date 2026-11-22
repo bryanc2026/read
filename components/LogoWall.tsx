@@ -14,6 +14,8 @@ type LogoWallProps = {
   tallLogos?: string[];
   /** Logos (by name) to render as a uniform white square tile, matching a row of existing square badge-style client logos (e.g. a plain wordmark added alongside logos that already have their own colored square tile baked in). Works for both image logos and the text fallback. */
   tileLogos?: string[];
+  /** A second group of logos (by name) rendered as its own row below the first, instead of wrapping into the same row — keeps a visually distinct batch (e.g. newly added client logos) from interleaving with the original set. */
+  secondaryLogos?: string[];
 };
 
 export default function LogoWall({
@@ -27,11 +29,52 @@ export default function LogoWall({
   size = "sm",
   tallLogos = [],
   tileLogos = [],
+  secondaryLogos = [],
 }: LogoWallProps) {
   const smallClassName = "h-8 w-auto max-w-[140px] object-contain md:h-10 md:max-w-[170px]";
   const largeClassName = "h-20 w-auto max-w-[160px] object-contain md:h-24 md:max-w-[190px]";
   const logoClassName = size === "lg" ? largeClassName : smallClassName;
   const isDark = theme === "dark";
+
+  const renderLogo = (logo: string) => {
+    const isTile = tileLogos.includes(logo);
+    const content = logoImages?.[logo] ? (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={logoImages[logo]}
+        alt={logo}
+        className={
+          isTile
+            ? `max-h-full max-w-full object-contain ${mono && !rawLogos.includes(logo) ? "brightness-0 invert" : ""}`
+            : `${tallLogos.includes(logo) ? largeClassName : logoClassName} ${
+                mono && !rawLogos.includes(logo) ? "brightness-0 invert" : ""
+              }`
+        }
+      />
+    ) : (
+      <span
+        className={`font-display text-lg font-extrabold uppercase tracking-tight ${
+          isTile ? "text-boom-black/70" : isDark ? "text-white/85" : "text-boom-black/70"
+        }`}
+      >
+        {logo}
+      </span>
+    );
+
+    return isTile ? (
+      <div
+        key={logo}
+        className="flex h-24 w-24 items-center justify-center rounded-xl bg-white p-3 shadow-card md:h-28 md:w-28"
+      >
+        {content}
+      </div>
+    ) : (
+      <div key={logo} className="flex items-center justify-center">
+        {content}
+      </div>
+    );
+  };
+
   return (
     <section
       className={
@@ -56,45 +99,13 @@ export default function LogoWall({
           follow each logo's own aspect ratio, so visual weight stays even.
         */}
         <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-8">
-          {logos.map((logo) => {
-            const isTile = tileLogos.includes(logo);
-            const content = logoImages?.[logo] ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={logoImages[logo]}
-                alt={logo}
-                className={
-                  isTile
-                    ? `max-h-full max-w-full object-contain ${mono && !rawLogos.includes(logo) ? "brightness-0 invert" : ""}`
-                    : `${tallLogos.includes(logo) ? largeClassName : logoClassName} ${
-                        mono && !rawLogos.includes(logo) ? "brightness-0 invert" : ""
-                      }`
-                }
-              />
-            ) : (
-              <span
-                className={`font-display text-lg font-extrabold uppercase tracking-tight ${
-                  isTile ? "text-boom-black/70" : isDark ? "text-white/85" : "text-boom-black/70"
-                }`}
-              >
-                {logo}
-              </span>
-            );
-
-            return isTile ? (
-              <div
-                key={logo}
-                className="flex h-24 w-24 items-center justify-center rounded-xl bg-white p-3 shadow-card md:h-28 md:w-28"
-              >
-                {content}
-              </div>
-            ) : (
-              <div key={logo} className="flex items-center justify-center">
-                {content}
-              </div>
-            );
-          })}
+          {logos.map(renderLogo)}
         </div>
+        {secondaryLogos.length > 0 && (
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-8">
+            {secondaryLogos.map(renderLogo)}
+          </div>
+        )}
       </div>
     </section>
   );

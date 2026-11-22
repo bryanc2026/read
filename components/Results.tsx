@@ -7,6 +7,7 @@ import {
   strategyDivider,
   type ResultStat,
 } from "@/lib/data";
+import EmailCapture from "./EmailCapture";
 
 function ResultCard({ stat }: { stat: ResultStat }) {
   return (
@@ -64,6 +65,8 @@ export default function Results() {
           </h2>
         </div>
       </section>
+
+      <EmailCapture />
 
       <section className="bg-boom-gray-50 pb-14 pt-8 md:pb-20 md:pt-12">
         <div className="container-content">

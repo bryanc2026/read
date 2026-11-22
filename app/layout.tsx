@@ -31,6 +31,13 @@ export const metadata: Metadata = {
     title: liveTitle,
     description: liveDescription,
     type: "website",
+    images: ["/images/boom-logo.png"],
+  },
+  twitter: {
+    card: "summary",
+    title: liveTitle,
+    description: liveDescription,
+    images: ["/images/boom-logo.png"],
   },
 };
 

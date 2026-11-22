@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type LogoWallProps = {
   title: string;
   subhead?: string;
@@ -8,10 +6,10 @@ type LogoWallProps = {
   theme?: "dark" | "light";
   /** Force every logo to a flat white silhouette via CSS filter. Only use with logos on a transparent background — on an opaque tile it flattens the whole tile to a blank white square. */
   mono?: boolean;
-  /** Logos (by name) that are opaque — excluded from the mono filter and given a white card instead so they don't flatten to a blank box. */
-  cardLogos?: string[];
   /** Logos (by name) already pre-styled for this exact background (e.g. a real screenshot of the badge on black) — skip the mono filter and render as-is. */
   rawLogos?: string[];
+  /** "sm" (default) for flat wordmark logos. "lg" for square/badge-style logos (e.g. client logo tiles), which need real height to read clearly since they're mostly 1:1, not wide wordmarks. */
+  size?: "sm" | "lg";
 };
 
 export default function LogoWall({
@@ -21,9 +19,11 @@ export default function LogoWall({
   logoImages,
   theme = "dark",
   mono = false,
-  cardLogos = [],
   rawLogos = [],
+  size = "sm",
 }: LogoWallProps) {
+  const logoClassName =
+    size === "lg" ? "h-20 w-auto max-w-[160px] object-contain md:h-24 md:max-w-[190px]" : "h-8 w-auto max-w-[140px] object-contain md:h-10 md:max-w-[170px]";
   const isDark = theme === "dark";
   return (
     <section
@@ -40,38 +40,24 @@ export default function LogoWall({
             {subhead}
           </p>
         )}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-5 gap-y-8">
+        {/*
+          Logos here have very different native aspect ratios (a tall bag-icon
+          wordmark next to a flat, wide one). Constraining every logo into an
+          identical width x height box (object-contain) made the flat/wide ones
+          render much shorter than the others at the same width. Industry-
+          standard fix for a mixed logo wall: fix the HEIGHT only and let width
+          follow each logo's own aspect ratio, so visual weight stays even.
+        */}
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-8">
           {logos.map((logo) =>
             logoImages?.[logo] ? (
-              cardLogos.includes(logo) ? (
-                <div
-                  key={logo}
-                  className="flex h-20 w-28 items-center justify-center overflow-hidden rounded-xl bg-white p-3 shadow-card md:h-28 md:w-36 lg:h-24 lg:w-32"
-                >
-                  <Image
-                    src={logoImages[logo]}
-                    alt={logo}
-                    width={300}
-                    height={300}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-              ) : (
-                <div
-                  key={logo}
-                  className="flex h-20 w-28 items-center justify-center md:h-28 md:w-36 lg:h-24 lg:w-32"
-                >
-                  <Image
-                    src={logoImages[logo]}
-                    alt={logo}
-                    width={300}
-                    height={300}
-                    className={`max-h-full max-w-full object-contain ${
-                      mono && !rawLogos.includes(logo) ? "brightness-0 invert" : ""
-                    }`}
-                  />
-                </div>
-              )
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={logo}
+                src={logoImages[logo]}
+                alt={logo}
+                className={`${logoClassName} ${mono && !rawLogos.includes(logo) ? "brightness-0 invert" : ""}`}
+              />
             ) : (
               <span
                 key={logo}

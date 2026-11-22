@@ -44,6 +44,7 @@ export default function Home() {
         logos={workedWith.logos}
         logoImages={workedWith.logoImages}
         theme="dark"
+        size="lg"
       />
       <Testimonials
         id="reviews"

@@ -668,7 +668,7 @@ export const metaMethodPage = {
     subhead: "We've used insights from working with Meta to develop the Boom Meta Method.",
     logos: ["Meta Business Partners"],
     logoImages: {
-      "Meta Business Partners": "/images/logos/meta-business-partners.jpg",
+      "Meta Business Partners": "/images/logos/meta-business-partners.png",
     } as Record<string, string>,
   },
   coachingSteps: {

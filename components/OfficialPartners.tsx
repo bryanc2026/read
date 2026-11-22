@@ -8,7 +8,7 @@ export default function OfficialPartners() {
       logos={officialPartners.logos}
       logoImages={officialPartners.logoImages}
       theme="dark"
-      rawLogos={officialPartners.logos}
+      mono
     />
   );
 }

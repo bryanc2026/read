@@ -10,7 +10,7 @@ export default function PressAndPartners() {
       logoImages={featuredBy.logoImages}
       theme="dark"
       mono
-      cardLogos={["Add To Cart"]}
+      rawLogos={["Add To Cart", "SmartCompany"]}
     />
   );
 }

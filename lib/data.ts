@@ -343,6 +343,8 @@ export const coaches: Coach[] = [
     ],
     quote: {
       text: "Bryan, our fractional CMO/CFO/ecommerce consultant, has been instrumental in transforming our online store. By emphasising key metrics like CAC, AOV and shipping, he turned our profit-loss situation into a profitable one.",
+      author: "Eamon Eastwood",
+      company: "Taste Ireland",
     },
     badges: [
       "Worked for one of the largest ecomm agencies in APAC for 5 years",
@@ -459,25 +461,14 @@ export const featuredBy = {
   } as Record<string, string>,
 };
 
-export type OfficialPartnerLogo = {
-  src: string;
-  /** Caption shown under the logo (e.g. "Partner"). The Meta logo already has this text baked in, so it's omitted there. */
-  partnerLabel?: string;
-  /** True when the source file is an opaque tile (no real transparency) — gets a white card instead of the white silhouette filter. */
-  opaque?: boolean;
-};
-
 export const officialPartners = {
   title: "Official Partners Of",
   logos: ["Meta Business Partners", "Klaviyo", "Shopify"],
   logoImages: {
-    "Meta Business Partners": {
-      src: "/images/logos/meta-business-partners.jpg",
-      opaque: true,
-    },
-    Klaviyo: { src: "/images/logos/klaviyo.png", partnerLabel: "K:Partners" },
-    Shopify: { src: "/images/logos/shopify.png", partnerLabel: "Partner" },
-  } as Record<string, OfficialPartnerLogo>,
+    "Meta Business Partners": "/images/logos/meta-business-partners.png",
+    Klaviyo: "/images/logos/klaviyo-partner.png",
+    Shopify: "/images/logos/shopify-partner.png",
+  } as Record<string, string>,
 };
 
 export const strategyDivider = {

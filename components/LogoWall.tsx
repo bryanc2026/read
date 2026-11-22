@@ -10,6 +10,8 @@ type LogoWallProps = {
   mono?: boolean;
   /** Logos (by name) that are opaque — excluded from the mono filter and given a white card instead so they don't flatten to a blank box. */
   cardLogos?: string[];
+  /** Logos (by name) already pre-styled for this exact background (e.g. a real screenshot of the badge on black) — skip the mono filter and render as-is. */
+  rawLogos?: string[];
 };
 
 export default function LogoWall({
@@ -20,6 +22,7 @@ export default function LogoWall({
   theme = "dark",
   mono = false,
   cardLogos = [],
+  rawLogos = [],
 }: LogoWallProps) {
   const isDark = theme === "dark";
   return (
@@ -63,7 +66,9 @@ export default function LogoWall({
                     alt={logo}
                     width={300}
                     height={300}
-                    className={`max-h-full max-w-full object-contain ${mono ? "brightness-0 invert" : ""}`}
+                    className={`max-h-full max-w-full object-contain ${
+                      mono && !rawLogos.includes(logo) ? "brightness-0 invert" : ""
+                    }`}
                   />
                 </div>
               )

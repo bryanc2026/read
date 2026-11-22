@@ -106,7 +106,7 @@ export const workedWith = {
     "Orange Sherbet": "/images/logos/orange-sherbet.png",
     "Alton Goods": "/images/logos/alton.png",
     Roogenic: "/images/logos/roogenic.png",
-    "Poseidon Animal Health": "/images/logos/poseidon.webp",
+    "Poseidon Animal Health": "/images/logos/poseidon.png",
     "Brolly Sheets": "/images/logos/brolly-sheets.svg",
     Hairgang: "/images/logos/hairgang.png",
   } as Record<string, string>,

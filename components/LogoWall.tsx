@@ -64,7 +64,7 @@ export default function LogoWall({
     return isTile ? (
       <div
         key={logo}
-        className="flex h-24 w-24 items-center justify-center rounded-xl bg-white p-3 shadow-card md:h-28 md:w-28"
+        className="flex h-20 w-20 items-center justify-center rounded-xl bg-white p-3 shadow-card md:h-24 md:w-24"
       >
         {content}
       </div>

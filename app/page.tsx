@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Differentiators from "@/components/Differentiators";
 import LogoWall from "@/components/LogoWall";
 import HowItWorks from "@/components/HowItWorks";
+import EmailCapture from "@/components/EmailCapture";
 import Results from "@/components/Results";
 import WhatMakesDifferent from "@/components/WhatMakesDifferent";
 import Coaches from "@/components/Coaches";
@@ -61,6 +62,7 @@ export default function Home() {
       <MemberSuccess />
       <OfficialPartners />
       <HowItWorks />
+      <EmailCapture />
       <WhatMakesDifferent />
       <Testimonials
         title={testimonialsSectionSecondary.title}

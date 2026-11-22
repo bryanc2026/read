@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const display = Archivo({
@@ -40,7 +41,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
-      <body className="font-body antialiased">{children}</body>
+      <body className="font-body antialiased">
+        {children}
+        <Script
+          id="klaviyo-onsite"
+          strategy="afterInteractive"
+          src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=VsUMuU"
+        />
+      </body>
     </html>
   );
 }

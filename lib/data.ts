@@ -107,8 +107,6 @@ export const workedWith = {
     "Poseidon Animal Health",
     "Brolly Sheets",
     "Hairgang",
-    "Millwood Shoes",
-    "Hey Doodle",
   ],
   logoImages: {
     Billabong: "/images/logos/billabong.png",
@@ -122,8 +120,6 @@ export const workedWith = {
     "Poseidon Animal Health": "/images/logos/poseidon.webp",
     "Brolly Sheets": "/images/logos/brolly-sheets.svg",
     Hairgang: "/images/logos/hairgang.png",
-    "Millwood Shoes": "/images/logos/millwoods.jpg",
-    "Hey Doodle": "/images/logos/heydoodle.png",
     // Roogenic's site blocks scripted access (Cloudflare bot protection) — falls
     // back to a text wordmark until Bryan/Iain can supply the logo file directly.
   } as Record<string, string>,

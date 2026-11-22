@@ -45,6 +45,7 @@ export default function Home() {
         logoImages={workedWith.logoImages}
         theme="dark"
         size="lg"
+        tileLogos={["Orange Sherbet", "Alton Goods", "Roogenic", "Brolly Sheets", "Hairgang"]}
       />
       <Testimonials
         id="reviews"
